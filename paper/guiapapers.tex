@@ -1,18 +1,50 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% bare_jrnl.tex
+% V1.4b
+% 2015/08/26
+% by Michael Shell
+% see http://www.michaelshell.org/
+% for current contact information.                                                                 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[journal,onecolumn]{IEEEtran}
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.8b or later) with an IEEE
+%% journal paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/pkg/ieeetran
+%% and
+%% http://www.ieee.org/
+
+
+\documentclass[journal, onecolumn]{IEEEtran}
+
+
+
 %
 \usepackage{instructivo}  % Commands for multiple choice
 \graphicspath{{./}{./fig/}}
 
 \usepackage[natbib=true,style=trad-unsrt,backend=biber]{biblatex}
-
 \addbibresource{literatura.bib}
 
+\usepackage{standalone}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{url}
+\usepackage{hyperref}
+
+
+
+\renewcommand\IEEEkeywordsname{Palabras clave}
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
 
-
 \begin{document}
+
 %
 % paper title
 % Titles are generally capitalized except for words such as a, an, and, as,
@@ -28,7 +60,6 @@
         ~y~Andrés~Rojas,~\IEEEmembership{Estudiante,~TEC}
 }
 
-
 % The paper headers
 \markboth{Taller de diseño analógico, IS2026}%
 {Taller de diseño analógico}
@@ -42,6 +73,10 @@
 El resumen no debe de exceder de 150 palabras y debe establecer lo que fue hecho, como fue hecho, los resultados principales y su significado. No cite referencias en el resumen. No coloque ecuaciones, símbolos especiales o palabras claves.
 \end{abstract}
 
+\clearpage
+\tableofcontents
+\clearpage
+
 % Se sugiere no más de cuatro palabras o frases cortas en orden alfabético, separadas por comas, que representen su reporte
 \begin{IEEEkeywords}
 Diodo, tensión, corriente, junta, ruptura.
@@ -52,130 +87,177 @@ Diodo, tensión, corriente, junta, ruptura.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introducción}
 
-\IEEEPARstart{E}{n} esta sección se describe una introducción que le permita al lector identificar aspectos importantes para la comprensión de la lectura del documento, una visión relacionada al experimento y a los conocimientos científicos estudiados.
+Un amplificador de audio con PWM (modulación de ancho de pulso, del inglés
+pulse-width modulation) es un amplificador de clase D. Para estos tipos de
+amplificadores se utiliza una señal transportadora (onda triangular) la cual usualmente
+tiene una frecuencia alrededor de 250 kHz. La PWM funciona como filtro pasabajas para
+agarrar la señal de audio y alimentarla al parlante. Debido a la naturaleza de la aplicación,
+el espectro PWM es dinámico.
+La modulación por ancho de pulso (PWM) es una técnica que permite representar
+o controlar una señal analógica usando una señal digital. Consiste en generar una onda
+cuadrada de frecuencia fija en la que lo que varía no es la amplitud, sino el tiempo que
+la señal permanece en alto dentro de cada período, conocido como ciclo de trabajo (duty
+cycle). Por ejemplo, un ciclo de trabajo del 50% significa que la señal está la mitad del
+tiempo encendida y la otra mitad apagada, mientras que valores mayores o menores
+representan niveles más altos o bajos de la señal equivalente.
+Esta técnica es ampliamente utilizada porque es eficiente y fácil de implementar
+en sistemas digitales. Se emplea en aplicaciones como control de velocidad de motores,
+regulación de potencia, iluminación y conversión de señales. Al promediar la señal PWM
+(por ejemplo, con un filtro), se puede recuperar una señal analógica equivalente, lo que
+la convierte en una herramienta clave para interactuar entre sistemas digitales y
+analógicos.
+Los amplificadores clase D son mucho más eficientes que otros tipos de
+amplificadores de potencia de audio. La clase AB, que son los tradicionalmente usados
+para aplicaciones de audio, tienen una eficiencia teórica máxima del 78.5% para una
+onda sinusoidal de salida máxima sin distorsión. Sin embargo, en la práctica esta
+eficiencia es mucho menor, del orden de 20\%. En cambio, para el caso de amplificadores
+tipo D, la eficiencia teórica es del 100\% porque los transistores son usados como
+interruptores. Debido a que la conmutación y filtrado de los transistores no son perfectos,
+la eficiencia en la práctica es de aproximadamente del 75\% \cite{hart2011power} .
+Los amplificadores tipo D también destacan por emitir menos calor, el cual está
+directamente relacionado a pérdidas de potencia.
 
+\subsection{Análisis del Circuito Integrado PAM8610}
+El PAM8610 es un amplificador de potencia de audio de Clase D estéreo que
+ofrece 10W por canal. Este componente es el núcleo del diseño debido a su alta
+eficiencia, lo que permite amplificar señales de audio con un desperdicio mínimo de
+energía. Se utiliza comúnmente en sistemas donde hay poco espacio y se requiere un
+consumo eficiente, como en monitores o parlantes portátiles.
+
+\subsection{El diagrama de bloques}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{fig/CircPam.pdf} 
+  \caption{Diagrama del circuito del PAM8610}
+  \label{fig:CircPAM}
+\end{figure}
+
+Basado en la arquitectura interna del fabricante, el funcionamiento del PAM8610
+se puede dividir en las siguientes etapas:
+• Entrada y Ajuste de Ganancia: La señal de audio (canales derecho e izquierdo)
+entra de forma diferencial por los pines RINN/P y LINN/P. El primer bloque
+operacional permite ajustar la ganancia de entrada. Existe también un bloque de
+Gain Adjust controlado por voltaje externo (pin Volume), lo que facilita el control
+del volumen sin meter ruido a la señal.
+
+
+• Modulación (PAM Modulation): En esta parte el bloque del oscilador (OSC) genera una señal de alta frecuencia que se compara con el audio de entrada. El resultado es una señal de Modulación por Ancho de Pulso (PWM).
+
+
+• Etapa de Potencia (Drivers y MOSFETs): La señal PWM pasa a unos controladores
+(Drivers) que activan un puente H compuesto por transistores MOSFET. Estos
+conmutan el voltaje de alimentación (PVCC) hacia las salidas (ROUT y LOUT) para
+mover los parlantes.
+
+
+• Sistemas de Protección y Control: El chip incluye bloques internos para evitar
+daños, como protección térmica (Thermal) y contra cortocircuitos. También
+cuenta con un sistema de on/off Depop que evita el ruido de "golpe" o chasquido
+en los parlantes al encender o apagar el circuito
+
+\subsection{Especificaciones del diseño}
+
+Para que el sistema cumpla con los requerimientos del proyecto, se consideran
+los siguientes parámetros de operación del chip:
+• Voltaje de alimentación: Soporta de 7V a 15V, por lo que funciona perfectamente
+con la fuente de 12V solicitada.
+• Eficiencia: Supera el 90\%, lo que elimina la necesidad de usar disipadores de
+calor grandes, simplificando el montaje en la protoboard.
+• Frecuencia de conmutación: Opera a unos 350 kHz. Este dato es fundamental
+para el diseño del filtro de salida, ya que este debe bloquear dicha frecuencia y
+dejar pasar solo el audio.
+3. Consideraciones para la Implementación
+El uso del PAM8610 simplifica el diseño al integrar casi todas las funciones de
+procesamiento. Sin embargo, se requiere el uso de condensadores de acoplamiento en
+las entradas para bloquear niveles de DC y asegurar que solo la señal de audio sea
+procesada.
+Aunque el fabricante menciona que el chip puede funcionar sin filtros en ciertas
+condiciones, para este diseño se implementará un filtro LC externo. Esto se hace con el
+fin de limpiar la señal de salida de los residuos de alta frecuencia de la conmutación y
+cumplir con los estándares de calidad de audio y reducción de interferencias solicitados.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Curva Característica del Diodo}
-El texto va aquí. La ecuación de la ley de Ohm es $V=I\cdot R$.
+\section{Diseño}
+El proyecto propone diseñar un circuito amplificador de audio clase-D de doble
+canal, para amplificar señales de audio estéreo, que como se mencionó anteriormente,
+debe cumplir con las siguientes especificaciones:
+- Voltaje de alimentación: 12V.
+- Potencia: 10W o menor.
+- Entradas de señal estéreo (izquierda y derecha), audio desde dispositivos como
+reproductor de música MP3, módulos Bluetooth y otros.
+- Bocinas (parlantes): impedancia de salida de 8~$\Omega$ o 16~$\Omega$.
+
+Además, sugiere que se puede implementar un circuito integrado como el
+anteriormente mencionado PAM8610, para simplificar el diseño del proyecto, por lo que
+se planteó la siguiente solución que consta de 3 etapas:
+
+1. Señal de entrada: La propuesta para la fuente de audio que se va a utilizar es la de
+un teléfono celular, del cual se obtendrá su señal de audio por medio de un
+conector JACK. Los cables tipo JACK poseen en su interior 3 cables diferentes, la
+señal de audio que va a la salida derecha, la salida izquierda y un cable asignado
+a la tierra. La idea es utilizar estos cables como las señales de entradas que se
+van a conectar al PAM8610.
+
+2. Amplificación de audio: En lo que respecta a la manipulación de las señales de
+entrada, se planea usar un módulo PAM8610, el cual ya cuenta no sólo con el chip
+del circuito integrado, sino que también incluye los condensadores de acople y
+diferentes filtros LC que sirven para limpiar la señal lo más posible. Por lo tanto,
+se estaría trabajando con un módulo que posee entradas y salidas de audio
+izquierda y derecha, alimentación, tierra y unos pines especiales llamados Mute
+que sirven para encender y apagar el módulo.
+
+3. Señal de salida: Una vez que la señal inicial pase por todo el proceso al que la
+somete el PAM8610, se probará que el audio original haya sido amplificado
+simplemente conectado dos bocinas de 8~$\Omega$ en las salidas $L+$, $L-$, $R+$ y $R-$ del
+módulo respectivamente. 
 
 
-\subsection{Circuitos de Medición}
+\section{Simulaciones y análisis}
 
-El circuito de la Fig. \ref{fig:poldiodo} se utiliza para obtener una curva característica de un diodo utilizando una fuente de tensión CD y un multímetro. 
-
-\begin{figure}[!ht]
-\centering
-\begin{subfigure}[c]{0.4\textwidth}
-	\centering
-	\includegraphics[width=2.5in]{circuito_1}
-	\caption{Directa}
-	\label{fig:directa}	
-\end{subfigure}
-\hfill
-\begin{subfigure}[c]{0.4\textwidth}
-	\centering
-	\includegraphics[width=2.5in]{circuito_2}
-	\caption{Inversa}
-	\label{fig:reversa}	
-\end{subfigure}
-\caption{Polarización del diodo}
-\label{fig:poldiodo}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\linewidth]{fig/CircuitoTOTAL.pdf}
+  \caption{Circuito}
+  \label{fig:CirCto}
 \end{figure}
 
-\subsection{Simulaciones}
-\subsection{Resultados Experimentales}
+Para simular el circuito, se utilizó Multisim. Con base en el funcionamiento del amplificador. Se modeló la PWM con una señal de transporte triangular de 50~kHz y una señal sinusoidal de 1~kHz como la señal de audio.
+Esta señal de audio tenía una amplitud de 250~mV, mientras que la triangular tenía una amplitud de 1.5~V.
 
-La gráfica de la Fig. \ref{fig:plot3} muestra una mala relación de tamaño para este formato de artículo, sin embargo, la que se muestra en la Fig. \ref{fig:plot4} se observan mejor los detalles de nombres de ejes y mayor resolución.
+La señal PWM se representó utilizando comparadores de voltaje e interruptores ideales, estos para facilitar el simulado de lo que en la prueba son los transistores.
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=3.7in]{plot4}
-\caption{Tensión de entrada $v_s(t)$ y salida $v_c(t)$ de un filtro RC (versión 1)}
-\label{fig:plot3}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\linewidth]{fig/Sim1.png} 
+  \caption{Simulación para señal de entrada y de salida del amplificador}
+  \label{fig:Sim1}
 \end{figure}
 
-\begin{figure}[!ht] 
-\centering
-\includegraphics[width=3.7in]{plot4}
-\caption{Tensión de entrada $v_s(t)$ y salida $v_c(t)$ de un filtro RC (versión 2)}
-\label{fig:plot4}
-\end{figure}
+Comparando el resultado simulado con la información encontrado en la hoja de datos del PAM8610, en condiciones generales se pueden esperar ganancias de hasta 32~dB \cite{pam8610_datasheet}. Viendo los resultados simulados, se obtuvieron valores que concordaron con lo esperado.
 
-En la Tabla \ref{tabla1} se muestran los valores de resistencias utilizadas para realizar las mediciones del circuito de la Fig. \ref{fig:poldiodo}.
-
-\begin{table}[!ht]
-        \centering
-        \caption{Valores de resistencia utilizados}
-        \begin{tabular}{|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
-             \hline
-             Componente & Valor requerido & Valor medidido \\ 
-             \hline
-             $R_1$ & $330\,\Omega$& \\ 
-             \hline
-             $R_2$ & $1\,M\Omega$ & \\
-             \hline
-            \end{tabular}
-    	\label{tabla1}   
-	\end{table}
+\section{Resultados Experimentales}
 
 
-\vspace{5mm}
-
-\subsection{Análisis de Resultados}
-En el texto del documento usualmente se anotan citas bibliográficas, en donde la forma de hacerlo es la siguiente:
-
-
-La tensión de ruptura del diodo se puede aproximar en $0.7\,$V \cite{Malik1996,Boylestad,Horowitz1989,Gray1995}. Por otro lado, la tensión de ruptura se puede considerar de $-40\,$V \cite{Floyd2008,Behzad2013,Schilling1994}. Un diodo puede considerarse como una junta de dos materiales, uno con un dopado de portadores mayoritarios mayor al otro material de la junta \cite{Pierret1994}.\\
-
-
-La ecuación que describe la ley de Ohm es:
-\begin{equation}
-	V=I\cdot R
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Graficando la Curva Característica del Diodo con el Osciloscopio}
-El texto va aquí.
-
-\subsection{Circuitos de Medición}
-El circuito de la Fig. \ref{fig_cir2} se utiliza para o.
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=3in]{circuito_3}
-\caption{Circuito de polarización inversa}
-\label{fig_cir2}
-\end{figure}
-
-\subsection{Simulaciones}
-\subsection{Resultados Experimentales}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusiones}
-Las conclusiones van aquí.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\appendices
-\section{Demostración de la Ley de Ohm}
-El texto relacionado al apéndice va aquí.
+%\appendices
 
-\section{Cálculos de polarización CD}
-El texto relacionado al apéndice va aquí.
+
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{}
+
 \printbibliography
-
-
 
 \vfill
 
