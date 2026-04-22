@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  9 APR 2026 23:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  22 APR 2026 14:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1332,21 +1332,22 @@ LaTeX Font Info:    Trying to load font information for TS1+phv on input line 13
  (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 ) [4 <./fig/CircPam.pdf>]
-<fig/CircuitoTOTAL.pdf, id=86, 688.5725pt x 506.89375pt>
-File: fig/CircuitoTOTAL.pdf Graphic file (type pdf)
-<use fig/CircuitoTOTAL.pdf>
-Package pdftex.def Info: fig/CircuitoTOTAL.pdf  used on input line 221.
-(pdftex.def)             Requested size: 350.33727pt x 257.90137pt.
-<fig/Sim1.png, id=87, 457.272pt x 307.695pt>
+<fig/pamCircuit.pdf, id=86, 337.26pt x 562.1pt>
+File: fig/pamCircuit.pdf Graphic file (type pdf)
+<use fig/pamCircuit.pdf>
+Package pdftex.def Info: fig/pamCircuit.pdf  used on input line 221.
+(pdftex.def)             Requested size: 300.29344pt x 500.49901pt.
+ [5]
+<fig/Sim1.png, id=94, 457.272pt x 307.695pt>
 File: fig/Sim1.png Graphic file (type png)
 <use fig/Sim1.png>
 Package pdftex.def Info: fig/Sim1.png  used on input line 233.
 (pdftex.def)             Requested size: 425.41444pt x 286.27077pt.
- [5 <./fig/CircuitoTOTAL.pdf>]
+ [6 <./fig/pamCircuit.pdf>]
 \tf@thm=\write7
 \openout7 = `guiapapers.thm'.
 
- [6 <./fig/Sim1.png>] (guiapapers.aux
+ [7 <./fig/Sim1.png>] (guiapapers.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -1362,17 +1363,17 @@ Package logreq Info: Writing requests to 'guiapapers.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38910 strings out of 474486
- 783222 string characters out of 5743755
- 1934542 words of memory out of 5000000
+ 38911 strings out of 474486
+ 783207 string characters out of 5743755
+ 1933542 words of memory out of 5000000
  60560 multiletter control sequences out of 15000+600000
  684194 words of font info for 158 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  99i,6n,101p,1204b,1926s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on guiapapers.pdf (6 pages, 439275 bytes).
+Output written on guiapapers.pdf (7 pages, 636994 bytes).
 PDF statistics:
- 790 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
+ 1663 PDF objects out of 1728 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
  92 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber guiapapers"] 1775797048.10821 "guiapapers.bcf" "guiapapers.bbl" "guiapapers" 1775797664.65546 0
-  "guiapapers.bcf" 1775797664 107049 27a90e7e1307e9332a681fe6f0f76e84 "pdflatex"
+["biber guiapapers"] 1775797048.10821 "guiapapers.bcf" "guiapapers.bbl" "guiapapers" 1776889520.64315 0
+  "guiapapers.bcf" 1776889520 107049 27a90e7e1307e9332a681fe6f0f76e84 "pdflatex"
   "literatura.bib" 1775797037 2106 32c80602a2de416d5e7bc5b7a58295bd ""
   (generated)
   "guiapapers.bbl"
   "guiapapers.blg"
   (rewritten before read)
-["pdflatex"] 1775797662.55594 "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper/guiapapers.tex" "guiapapers.pdf" "guiapapers" 1775797664.65629 0
+["pdflatex"] 1776889518.46926 "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper/guiapapers.tex" "guiapapers.pdf" "guiapapers" 1776889520.64398 0
   "C:/Users/matia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1775790566 124346 55158e4ffab625ef9c37e66c4ee22ffe ""
   "C:/Users/matia/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1741727281 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/matia/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1741727284 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -241,16 +241,16 @@
   "C:/Users/matia/AppData/Local/Programs/MiKTeX/tex/latex/was/icomma.sty" 1665850770 1018 df058db1896806f044e2233bb506d425 ""
   "C:/Users/matia/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/matia/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper/guiapapers.tex" 1775797659 12362 565eb603f7b3facbb4ca7af9337d4941 ""
+  "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper/guiapapers.tex" 1776889515 12422 a1b436d63a20704f1cb6986c51f318f6 ""
   "fig/CircPam.pdf" 1775792165 22639 3b73dcb7099fa451228b7d0d6eee68a4 ""
-  "fig/CircuitoTOTAL.pdf" 1775795139 145163 8d9f667656f54fb477b26d82b6a7e304 ""
   "fig/Sim1.png" 1775794757 220443 f71e151f04423064ce286629a66f498f ""
-  "guiapapers.aux" 1775797664 2827 7d1595a0dc6bacf86289a338193e0f05 "pdflatex"
+  "fig/pamCircuit.pdf" 1776889303 338853 b0895a7b246d40494a1984e2652b302d ""
+  "guiapapers.aux" 1776889520 2953 cc8a2d6fd82b7c960481f5aa08fe38c7 "pdflatex"
   "guiapapers.bbl" 1775797050 2260 769d2f0fd10ecea587df89f8e1f12ef5 "biber guiapapers"
-  "guiapapers.out" 1775797664 1267 37cd2fc8174285397a0fbd317474e6e8 "pdflatex"
-  "guiapapers.run.xml" 1775797664 2455 dbc4f500eb2476a60552ca23f2b67fd6 "pdflatex"
-  "guiapapers.tex" 1775797659 12362 565eb603f7b3facbb4ca7af9337d4941 ""
-  "guiapapers.toc" 1775797664 707 3dc9f6739cfa10c87b887d4782f72442 "pdflatex"
+  "guiapapers.out" 1776889520 1267 37cd2fc8174285397a0fbd317474e6e8 "pdflatex"
+  "guiapapers.run.xml" 1776889520 2455 dbc4f500eb2476a60552ca23f2b67fd6 "pdflatex"
+  "guiapapers.tex" 1776889515 12422 a1b436d63a20704f1cb6986c51f318f6 ""
+  "guiapapers.toc" 1776889520 707 76f5bd9ff77fa1d9a9f42aa6be0aad03 "pdflatex"
   "instructivo.sty" 1775789955 9971 8ec5358d70caf21040f8bc9bbe4a7a0d ""
   (generated)
   "guiapapers.aux"
