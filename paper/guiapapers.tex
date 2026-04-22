@@ -239,12 +239,23 @@ Comparando el resultado simulado con la información encontrado en la hoja de da
 
 \section{Resultados Experimentales}
 
+Se llevó a cabo la implementación física del sistema utilizando el módulo PAM8610, alimentado por una fuente de 12V y conectado a dos parlantes de $8\Omega$. Durante las pruebas, se utilizó un teléfono celular como fuente de audio, conectando su salida de auriculares al módulo a través de un conector JACK.
+
+Se observó que el sistema logró amplificar la señal de audio de manera efectiva, con una calidad de sonido clara y sin distorsiones notables. El único defecto que se notó en la prueba, fue que casi no sonaban los bajos. Pero, ese defecto se debe a la calidad de los parlantes utilizados. 
+
+La potencia de salida se mantuvo dentro del rango esperado, proporcionando un volumen adecuado para los parlantes. El chip operó de manera estable, sin sobrecalentamiento, lo que confirma la alta eficiencia del diseño. Además, el filtro LC implementado logró reducir significativamente el ruido de alta frecuencia, mejorando la calidad del audio amplificado.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusiones}
+
+Se determinó que los amplificadores de clase D, como el PAM8610, son una excelente opción para aplicaciones de audio debido a su alta eficiencia y bajo consumo de energía. La implementación del módulo PAM8610 permitió amplificar señales de audio estéreo con una calidad aceptable, aunque la calidad final del sonido estuvo limitada por los parlantes utilizados.
+
+Se comprobó que la modulación por ancho de pulso (PWM) es una técnica efectiva para controlar la amplificación de audio, y que el diseño del filtro LC elimina el ruido de alta frecuencia generado por los transistores. 
+
+La simulación realizada en Multisim mostró resultados consistentes con las especificaciones del PAM8610, confirmando la validez del diseño propuesto. En general, el proyecto demostró que es posible construir un amplificador de audio eficiente y funcional utilizando componentes integrados, lo que simplifica el proceso de diseño y reduce la necesidad de componentes adicionales.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
