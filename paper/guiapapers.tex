@@ -224,13 +224,13 @@ módulo respectivamente.
 \end{figure}
 
 Para simular el circuito, se utilizó Multisim. Con base en el funcionamiento del amplificador. Se modeló la PWM con una señal de transporte triangular de 300~kHz y una señal sinusoidal de 25~kHz como la señal de audio.
-Esta señal de audio tenía una amplitud de 2~V, mientras que la triangular tenía una amplitud de 5~V.
+Esta señal de audio tenía una amplitud de 2~V, mientras que la triangular tenía una amplitud de 5~V. Estas señales se someten a un comparador y la salida de este se conecta a un puente H para aumentar la potencia de la carga. Luego de esto se incluyen filtros LC que terminan de recontruir la señal original y se obtienen las señales de salida. 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.85\linewidth]{fig/Sim1.png} 
-  \caption{Simulación para señal de entrada y de salida del amplificador}
-  \label{fig:Sim1}
+  \includegraphics[width=0.85\linewidth]{fig/Salidas.png} 
+  \caption{Simulación para ambas señales de salida del amplificador}
+  \label{fig:Salidas}
 \end{figure}
 
 Comparando el resultado simulado con la información encontrado en la hoja de datos del PAM8610, en condiciones generales se pueden esperar ganancias de hasta 32~dB \cite{pam8610_datasheet}. Viendo los resultados simulados, se obtuvieron valores que concordaron con lo esperado.
