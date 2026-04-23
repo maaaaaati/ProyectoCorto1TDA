@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  22 APR 2026 14:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  23 APR 2026 13:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1323,31 +1323,31 @@ File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 <fig/CircPam.pdf, id=68, 396.48125pt x 353.32pt>
 File: fig/CircPam.pdf Graphic file (type pdf)
 <use fig/CircPam.pdf>
-Package pdftex.def Info: fig/CircPam.pdf  used on input line 131.
+Package pdftex.def Info: fig/CircPam.pdf  used on input line 129.
 (pdftex.def)             Requested size: 396.48027pt x 353.31914pt.
  [3
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 138.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 136.
  (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 ) [4 <./fig/CircPam.pdf>]
 <fig/pamCircuit.pdf, id=86, 337.26pt x 562.1pt>
 File: fig/pamCircuit.pdf Graphic file (type pdf)
 <use fig/pamCircuit.pdf>
-Package pdftex.def Info: fig/pamCircuit.pdf  used on input line 221.
+Package pdftex.def Info: fig/pamCircuit.pdf  used on input line 219.
 (pdftex.def)             Requested size: 300.29344pt x 500.49901pt.
  [5]
-<fig/Sim1.png, id=94, 457.272pt x 307.695pt>
-File: fig/Sim1.png Graphic file (type png)
-<use fig/Sim1.png>
-Package pdftex.def Info: fig/Sim1.png  used on input line 233.
-(pdftex.def)             Requested size: 425.41444pt x 286.27077pt.
- [6 <./fig/pamCircuit.pdf>]
+<fig/Salidas.png, id=94, 344.28625pt x 234.8775pt>
+File: fig/Salidas.png Graphic file (type png)
+<use fig/Salidas.png>
+Package pdftex.def Info: fig/Salidas.png  used on input line 229.
+(pdftex.def)             Requested size: 425.41444pt x 290.22725pt.
+ [6 <./fig/pamCircuit.pdf>] [7 <./fig/Salidas.png>]
 \tf@thm=\write7
 \openout7 = `guiapapers.thm'.
 
- [7 <./fig/Sim1.png>] (guiapapers.aux
+ [8] (guiapapers.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -1363,17 +1363,17 @@ Package logreq Info: Writing requests to 'guiapapers.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38911 strings out of 474486
- 783207 string characters out of 5743755
- 1933542 words of memory out of 5000000
- 60560 multiletter control sequences out of 15000+600000
+ 38909 strings out of 474486
+ 783162 string characters out of 5743755
+ 1934542 words of memory out of 5000000
+ 60557 multiletter control sequences out of 15000+600000
  684194 words of font info for 158 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 99i,6n,101p,1204b,1926s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,6n,101p,1204b,2005s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on guiapapers.pdf (7 pages, 636994 bytes).
+Output written on guiapapers.pdf (8 pages, 473183 bytes).
 PDF statistics:
- 1663 PDF objects out of 1728 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
+ 1667 PDF objects out of 1728 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
  92 words of extra memory for PDF output out of 10000 (max. 10000000)
 
