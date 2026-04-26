@@ -1,0 +1,9 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {I}Introducción}{3}{section.1}%
+\contentsline {subsection}{\numberline {\mbox {I-A}}Análisis del Circuito Integrado PAM8610}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {\mbox {I-B}}El diagrama de bloques}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {\mbox {I-C}}Especificaciones del diseño}{4}{subsection.1.3}%
+\contentsline {section}{\numberline {II}Diseño}{5}{section.2}%
+\contentsline {section}{\numberline {III}Simulaciones y análisis}{6}{section.3}%
+\contentsline {section}{\numberline {IV}Resultados Experimentales}{7}{section.4}%
+\contentsline {section}{\numberline {V}Conclusiones}{7}{section.5}%

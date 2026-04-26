@@ -45,6 +45,7 @@
 
 \begin{document}
 
+\setlength{\parindent}{4.2mm}
 %
 % paper title
 % Titles are generally capitalized except for words such as a, an, and, as,
@@ -101,10 +102,33 @@ E
 El proyecto propone diseñar un circuito PWM solo con la utilización de una fuente de DC y varios circuitos con topologías de amplificadores operacionales. Específicamente, se planteó generar una señal sinusoidal con un puente Wien, para compararla (el circuito integrado LM393 funcionando como comparador) con una señal de triangular. La señal triangular se generaría con un circuito integrador alimentado con una señal cuadrada, la cual se generaría con un circuito comparador.
 Como parámetros de diseño, se tiene que la onda sinusoidal debe tener una frecuencia de 100~Hz y magnitud de 2~V. La onda transportadora debe tener una magnitud de 2.1~V a 2.5~V y una frecuencia de 5~kHz.
 
+Para lograr uan frecuencia de 100~Hz con el puente Wien, se utilizó la siguiente fórmula:
+\begin{equation}
+        f=\frac{1}{2 \pi RC}
+\end{equation}
 
+Donde $R$ es la resistencia en el circuito retrasador y $C$ la capacitancia en el circuito retrasador. Esto es suponiendo que todas las resistencias y capacitancias en ese circuito tienen el mismo valor.
+Escogiendo una resistencia de 1500~$\Omega$, y una capacitancia de 1~$\mu$F, se obtiene una frecuencia de aproximadamente 106~Hz, lo cual es cercano al valor buscado. Además, los componentes utilizados en la práctica tienen tolerancias que pueden hacer que la frecuencia calculada varíe y esté más cerca o lejos del valor deseado de 100~Hz.
+
+En cuanto al bloque que genera la onda cuadrada, se plantea construir un comparador. Este comparador puede utilizar la onda sinusoidal de un puente Wien (diferente al de la onda sinusoidal ya antes mencionada, debido a que se necesita una frecuencia específica de 5~kHz) y al saturarse, generar niveles de voltaje relacionados a la tensión de alimentación del amplificador operacional.
+
+La señal triangular entonces sería generada por un circuito integrador. La frecuencia necesaria es de 5~kHz, frecuencia que viene de la onda rectangular. Esta frecuencia se obtiene con otro puente de Wien, de tal manera que se seguiría el diseño del primer puente pero con $R$ fijado en 3200~$\Omega$ y $C$ fijado en 10~nF. Esto da una frecuencia de aproximadamente 4970~Hz, lo cual es cercano a los 5~kHz buscados.
 \section{Simulaciones y análisis}
+\subsection{Puentes de Wien}
+Para la simulación de los puentes de Wien, se utilizó Multisim. Para poder lograr que los circuitos se iniciaran por sí solos, se utilizó potenciómetros para variar la ganancia y así obtener oscilaciones.
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{WienPrimaria.png}
+        \caption{Onda de salida del principal puente de Wien.}
+        \label{fig:wienprimaria}
+\end{figure}
 
-
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{WienSecundaria.png}
+        \caption{Onda de salida del puente de Wien secundario.}
+        \label{fig:wiensecondaria}
+\end{figure}
 
 
 \section{Resultados Experimentales}
