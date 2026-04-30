@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  26 APR 2026 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  30 APR 2026 16:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1323,24 +1323,18 @@ File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 <./fig/WienPrimaria.png, id=73, 620.3175pt x 554.82281pt>
 File: ./fig/WienPrimaria.png Graphic file (type png)
 <use ./fig/WienPrimaria.png>
-Package pdftex.def Info: ./fig/WienPrimaria.png  used on input line 121.
+Package pdftex.def Info: ./fig/WienPrimaria.png  used on input line 125.
 (pdftex.def)             Requested size: 300.29344pt x 268.58078pt.
  [3
 
 ]
-<./fig/WienSecundaria.png, id=82, 619.56468pt x 554.07pt>
-File: ./fig/WienSecundaria.png Graphic file (type png)
-<use ./fig/WienSecundaria.png>
-Package pdftex.def Info: ./fig/WienSecundaria.png  used on input line 128.
-(pdftex.def)             Requested size: 300.29344pt x 268.54608pt.
 
-
-LaTeX Warning: Empty bibliography on input line 156.
+LaTeX Warning: Empty bibliography on input line 152.
 
 \tf@thm=\write7
 \openout7 = `segundoproyecto.thm'.
 
-[4 <./fig/WienPrimaria.png> <./fig/WienSecundaria.png>] (segundoproyecto.aux
+[4 <./fig/WienPrimaria.png>] (segundoproyecto.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -1356,17 +1350,17 @@ Package logreq Info: Writing requests to 'segundoproyecto.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38646 strings out of 474486
- 778212 string characters out of 5743755
- 1935542 words of memory out of 5000000
- 60304 multiletter control sequences out of 15000+600000
+ 38634 strings out of 474486
+ 777897 string characters out of 5743755
+ 1934542 words of memory out of 5000000
+ 60293 multiletter control sequences out of 15000+600000
  683881 words of font info for 157 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  99i,7n,101p,1210b,1926s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on segundoproyecto.pdf (4 pages, 147029 bytes).
+Output written on segundoproyecto.pdf (4 pages, 107710 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 95 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 90 words of extra memory for PDF output out of 10000 (max. 10000000)
 

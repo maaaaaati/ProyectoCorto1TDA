@@ -553,12 +553,6 @@ INPUT C:\Users\matia\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8
 INPUT C:\Users\matia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\matia\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
 INPUT C:\Users\matia\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
-INPUT .\fig\WienSecundaria.png
-INPUT .\fig\WienSecundaria.png
-INPUT .\fig\WienSecundaria.png
-INPUT .\fig\WienSecundaria.png
-INPUT .\fig\WienSecundaria.png
-INPUT .\fig\WienSecundaria.png
 OUTPUT segundoproyecto.thm
 INPUT segundoproyecto.aux
 INPUT .\segundoproyecto.out

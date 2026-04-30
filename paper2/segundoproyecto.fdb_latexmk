@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber segundoproyecto"] 1777247665.91139 "segundoproyecto.bcf" "segundoproyecto.bbl" "segundoproyecto" 1777247796.53261 0
-  "segundoproyecto.bcf" 1777247796 106909 00a202e4accf4e974b238942a4752a3a "pdflatex"
+["biber segundoproyecto"] 1777247665.91139 "segundoproyecto.bcf" "segundoproyecto.bbl" "segundoproyecto" 1777586750.22273 0
+  "segundoproyecto.bcf" 1777586749 106909 00a202e4accf4e974b238942a4752a3a "pdflatex"
   (generated)
   "segundoproyecto.bbl"
   "segundoproyecto.blg"
   (rewritten before read)
-["pdflatex"] 1777247794.36017 "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/segundoproyecto.tex" "segundoproyecto.pdf" "segundoproyecto" 1777247796.53352 0
+["pdflatex"] 1777586748.37071 "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/segundoproyecto.tex" "segundoproyecto.pdf" "segundoproyecto" 1777586750.22347 0
   "C:/Users/matia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1775790566 124346 55158e4ffab625ef9c37e66c4ee22ffe ""
   "C:/Users/matia/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1741727281 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/matia/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1741727284 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -236,16 +236,15 @@
   "C:/Users/matia/AppData/Local/Programs/MiKTeX/tex/latex/was/icomma.sty" 1665850770 1018 df058db1896806f044e2233bb506d425 ""
   "C:/Users/matia/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/matia/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/segundoproyecto.tex" 1777247791 6401 8c82ab01ce713d5c107291584b65e0da ""
+  "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/segundoproyecto.tex" 1777586745 5685 6f3d62cbd76ffe709ebbbae1d27b61ed ""
   "fig/WienPrimaria.png" 1777247183 59489 308981e016a0e23c470a3ca32bc7a7d1 ""
-  "fig/WienSecundaria.png" 1777247203 57872 a6a2764ace4d490f42731bcefae839bf ""
   "instructivo.sty" 1775789955 9971 8ec5358d70caf21040f8bc9bbe4a7a0d ""
-  "segundoproyecto.aux" 1777247796 2330 ded6d128392d26ba67d84ac8e4ae8cb3 "pdflatex"
+  "segundoproyecto.aux" 1777586749 1950 32f636fd4734066abb5dccbd910aec78 "pdflatex"
   "segundoproyecto.bbl" 1777247667 486 ee04f40f768daeed26442158e95aba61 "biber segundoproyecto"
-  "segundoproyecto.out" 1777247796 1060 f60fd28e491bb1de26224cd43664a662 "pdflatex"
-  "segundoproyecto.run.xml" 1777247796 2490 c61b8dbce6449010f052c88fe3280945 "pdflatex"
-  "segundoproyecto.tex" 1777247791 6401 8c82ab01ce713d5c107291584b65e0da ""
-  "segundoproyecto.toc" 1777247796 736 a8a14095d94f21eb464b077d08ae6753 "pdflatex"
+  "segundoproyecto.out" 1777586749 1060 f60fd28e491bb1de26224cd43664a662 "pdflatex"
+  "segundoproyecto.run.xml" 1777586749 2490 c61b8dbce6449010f052c88fe3280945 "pdflatex"
+  "segundoproyecto.tex" 1777586745 5685 6f3d62cbd76ffe709ebbbae1d27b61ed ""
+  "segundoproyecto.toc" 1777586749 736 a8a14095d94f21eb464b077d08ae6753 "pdflatex"
   (generated)
   "segundoproyecto.aux"
   "segundoproyecto.bcf"
