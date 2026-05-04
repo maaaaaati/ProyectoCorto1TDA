@@ -109,9 +109,9 @@ La modulación por ancho de pulso es una técnica utilizada para representar una
 \section{Diseño}
 El proyecto propone diseñar un circuito PWM solo con la utilización de una fuente de DC y varios circuitos con topologías de amplificadores operacionales. Específicamente, se plantea generar una señal sinusoidal con un puente Wien, para compararla (el circuito integrado LM393 funcionando como comparador) con una señal triangular. 
 
-La señal triangular se generará mediante un circuito integrador, el cual será alimentado por una señal cuadrada. Esta señal cuadrada se obtendrá a partir de
+Como parámetros de diseño, se tiene que la onda sinusoidal debe tener una frecuencia de 100~Hz y magnitud de 2~V. La onda triangular debe tener una magnitud de 2.1~V a 2.5~V y una frecuencia de 5~kHz.
 
-Como parámetros de diseño, se tiene que la onda sinusoidal debe tener una frecuencia de 100~Hz y magnitud de 2~V. La onda transportadora debe tener una magnitud de 2.1~V a 2.5~V y una frecuencia de 5~kHz.
+\subsection{Generador de Onda Sinusoidal}
 
 Para lograr una frecuencia de 100~Hz con el puente Wien, se utilizó la siguiente fórmula:
 \begin{equation}
@@ -122,8 +122,72 @@ Donde $R$ es la resistencia en el circuito retrasador y $C$ la capacitancia en e
 
 Escogiendo una resistencia de 1500~$\Omega$, y una capacitancia de 1~$\mu$F, se obtiene una frecuencia de aproximadamente 106~Hz, lo cual es cercano al valor buscado. Además, los componentes utilizados en la práctica tienen tolerancias que pueden hacer que la frecuencia calculada varíe y esté más cerca o lejos del valor deseado de 100~Hz.
 
+\subsection{Generador de Onda Triangular}
 
-La señal triangular entonces sería generada por un circuito integrador. La frecuencia necesaria es de 5~kHz, la cual está determinada por la señal cuadrada de entrada. La amplitud de la señal triangular dependerá de los valores de los componentes del integrador y de la amplitud de la señal cuadrada.
+El generador de onda triangular se implementa mediante dos bloques funcionales 
+interconectados: un disparador Schmitt (\textit{Schmitt Trigger}) y un circuito 
+integrador. El disparador Schmitt genera una señal cuadrada que oscila entre 
+$+V_{sat}$ y $-V_{sat}$, la cual es integrada por el segundo bloque para producir 
+la onda triangular deseada. Se utilizó el amplificador operacional TL082CP con una 
+alimentación de $\pm12$~V, cuyo voltaje de saturación típico es de aproximadamente 
+$V_{sat} \approx 10.5$~V.
+
+\subsubsection{Bloque 1: Disparador Schmitt}
+
+El disparador Schmitt se configura con el amplificador operacional en modo no 
+inversor, con la entrada inversora conectada a tierra. La entrada no inversora recibe 
+la retroalimentación positiva desde la salida y la señal triangular 
+proveniente del integrador.
+
+La amplitud de la onda triangular queda determinada por el umbral de conmutación 
+$V_H$ del disparador Schmitt, el cual se expresa como:
+
+\begin{equation}
+    V_H = \frac{V_{sat}}{n}
+    \label{eq:schmitt_umbral}
+\end{equation}
+
+donde $n$ es la relación entre resistencias del circuito divisor. Dado que se desea 
+una amplitud de $2.5$~$V_p$, se despeja $n$:
+
+\begin{equation}
+    n = \frac{V_{sat}}{V_H} = \frac{10.5}{2.5} = 4.2
+    \label{eq:n_valor}
+\end{equation}
+
+Se elige $R_2 = 5.1$~k$\Omega$ como valor estándar disponible, y se calcula $R_1$ 
+a partir de la relación $n$:
+
+\begin{equation}
+    R_1 = n \cdot R_2 = 4.2 \times 5.1~\text{k}\Omega = 21.42~\text{k}\Omega
+    \label{eq:R1_schmitt}
+\end{equation}
+
+Este valor fue ajustado 
+a $R_1 = 21.5$~k$\Omega$, 
+con el cual se verificó que la amplitud y frecuencia cumplen con las 
+especificaciones del proyecto.
+
+\subsubsection{Bloque 2: Integrador}
+
+El integrador convierte la señal cuadrada generada por el disparador Schmitt en 
+una onda triangular. La frecuencia de oscilación del sistema completo está 
+determinada por la siguiente expresión:
+
+\begin{equation}
+    f = \frac{n}{4 \cdot R_1 \cdot C}
+    \label{eq:frecuencia_triangular}
+\end{equation}
+
+donde $R_1$ es la resistencia del integrador y $C$ es el capacitor de 
+retroalimentación. Se elige $C = 100$~nF como valor estándar, y se despeja 
+$R_1$:
+
+\begin{equation}
+    R_i = \frac{n}{4 \cdot C \cdot f} = \frac{4.2}{4 \cdot 100~\text{nF} 
+    \cdot 5~\text{kHz}} = 2.1~\text{k}\Omega
+    \label{eq:Ri_integrador}
+\end{equation}
 
 \section{Simulaciones y análisis}
 \subsection{Puentes de Wien}
