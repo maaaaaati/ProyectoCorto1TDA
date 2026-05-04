@@ -86,13 +86,21 @@ Diodo, tensión, corriente, junta, ruptura.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introducción}
 
+\subsection{Generación de Formas de Onda}
 
-\subsection{}
-E
-\subsection{}
+Es posible producir señales periódicas con características definidas por medio de circuitos analógicos con configuraciones específicas. Entre las señales o formas de onda más comunes se encuentran la onda sinusoidal, la cuadrada y la triangular, las cuales son relevantes para el desarrollo del diseño del presente proyecto. 
 
+Las señales sinusoidales se obtienen típicamente mediante circuitos con osciladores lineales que emplean redes de realimentación selectivas en frecuencia, permitiendo producir señales continuas con baja distorsión, como es el caso del Puente de Wien. Por otro lado, las señales cuadradas se generan a partir de circuitos no lineales que operan en saturación, como comparadores o disparadores tipo Schmitt, produciendo transiciones rápidas entre dos niveles de voltaje \cite{Horowitz1989} .
 
+En el caso de las señales triangulares, estas pueden generarse mediante la integración de una señal cuadrada, tomando en cuenta la relación matemática entre ambas. Un circuito integrador, cuya configuración involucra el uso de amplificadores operacionales, permite transformar una señal de entrada constante en una rampa lineal, dando como resultado una forma de onda triangular cuando la entrada es periódica \cite{Horowitz1989} .
 
+\subsection{Circuitos Comparadores} 
+
+Son circuitos con amplificadores operacionales cuyo funcionamiento se basa en evaluar cuál de sus dos señales de entrada tiene mayor voltaje. Si la señal conectada a la entrada no inversora es mayor que la de la entrada inversora, la salida del comparador cambia a un nivel alto. En caso contrario, cuando la señal en la entrada inversora es mayor, la salida pasa a un nivel bajo. De esta manera, el comparador actúa como un dispositivo que indica, mediante su salida, cuál de las dos entradas predomina en cada instante. A diferencia de los amplificadores operacionales utilizados en configuración lineal, los comparadores operan en modo no lineal o saturación, conmutando rápidamente entre dos niveles de salida. \cite{Mancini2002} . 
+
+\subsection{Modulación por Ancho de Pulso (PWM)}
+
+La modulación por ancho de pulso es una técnica utilizada para representar una señal analógica mediante una señal digital cuyo ciclo de trabajo varía en el tiempo. En este método, la información de la señal de entrada no se transmite mediante cambios en la amplitud, sino a través de la duración relativa de los pulsos en estado alto y bajo dentro de cada período de la señal. El principio de funcionamiento se basa en comparar una señal de referencia, generalmente de baja frecuencia, con una señal portadora de mayor frecuencia, comúnmente de forma triangular o diente de sierra. Cuando la señal de entrada supera a la señal portadora, la salida toma un nivel alto; en caso contrario, la salida permanece en un nivel bajo. Este proceso ocurre de manera continua, generando una señal periódica cuya frecuencia está determinada por la señal portadora. Como resultado, el ciclo de trabajo de la señal PWM varía siguiendo la forma de la señal de entrada: a mayor amplitud de la señal de referencia, mayor es el tiempo que la señal de salida permanece en estado alto dentro de cada período. De esta forma, aunque la señal resultante es digital, conserva la información de la señal analógica original. \cite{hart2011power} .
 \subsection{Especificaciones del diseño}
 
 
