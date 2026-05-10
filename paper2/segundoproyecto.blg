@@ -1,14 +1,14 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'segundoproyecto.blg'
-[101] biber-MSWIN64:340> INFO - === 
-[136] Biber.pm:419> INFO - Reading 'segundoproyecto.bcf'
-[235] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
-[250] Biber.pm:4419> INFO - Processing section 0
-[266] Biber.pm:4610> INFO - Looking for bibtex file 'literatura.bib' for section 0
-[321] bibtex.pm:1713> INFO - LaTeX decoding ...
-[340] bibtex.pm:1519> INFO - Found BibTeX data source 'literatura.bib'
-[404] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[404] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[404] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[406] bbl.pm:660> INFO - Writing 'segundoproyecto.bbl' with encoding 'UTF-8'
-[407] bbl.pm:763> INFO - Output to segundoproyecto.bbl
+[95] biber-MSWIN64:340> INFO - === 
+[132] Biber.pm:419> INFO - Reading 'segundoproyecto.bcf'
+[219] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
+[231] Biber.pm:4419> INFO - Processing section 0
+[241] Biber.pm:4610> INFO - Looking for bibtex file 'literatura.bib' for section 0
+[298] bibtex.pm:1713> INFO - LaTeX decoding ...
+[309] bibtex.pm:1519> INFO - Found BibTeX data source 'literatura.bib'
+[369] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[369] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[369] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[371] bbl.pm:660> INFO - Writing 'segundoproyecto.bbl' with encoding 'UTF-8'
+[372] bbl.pm:763> INFO - Output to segundoproyecto.bbl

@@ -122,6 +122,15 @@ Donde $R$ es la resistencia en el circuito retrasador y $C$ la capacitancia en e
 
 Escogiendo una resistencia de 1500~$\Omega$, y una capacitancia de 1~$\mu$F, se obtiene una frecuencia de aproximadamente 106~Hz, lo cual es cercano al valor buscado. Además, los componentes utilizados en la práctica tienen tolerancias que pueden hacer que la frecuencia calculada varíe y esté más cerca o lejos del valor deseado de 100~Hz.
 
+Debido a que el puente de Wien requiere una ganancia específica para iniciar las oscilaciones, donde desviaciones alrededor de esa ganancia generarían una salida inestable o una salida estable con valor final de cero, se optó por utilizar dos diodos como clamppers y un potenciómetro para ajustar la salida. Se escogió utilizar diodos 1N914, debido a su rápida conmutación y disponibilidad.
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{wienPUENTE.pdf}
+        \caption{Circuito del puente de Wien con control de amplitud}
+        \label{fig:wienCIRC}
+\end{figure}
+
 \subsection{Generador de Onda Triangular}
 
 El generador de onda triangular se implementa mediante dos bloques funcionales 
@@ -190,8 +199,8 @@ $R_1$:
 \end{equation}
 
 \section{Simulaciones y análisis}
-\subsection{Puentes de Wien}
-Para la simulación de los puentes de Wien, se utilizó Multisim. Para poder lograr que los circuitos se iniciaran por sí solos, se utilizó potenciómetros para variar la ganancia y así obtener oscilaciones.
+\subsection{Puente de Wien}
+Para la simulación del puente de Wien, se utilizó Multisim. Para poder lograr que el circuito se iniciara por sí solo, se utilizó potenciómetros para variar la ganancia y así obtener oscilaciones.
 \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\linewidth]{WienPrimaria.png}
