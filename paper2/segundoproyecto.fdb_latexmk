@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber segundoproyecto"] 1778383636.67171 "segundoproyecto.bcf" "segundoproyecto.bbl" "segundoproyecto" 1778384567.49165 0
+["biber segundoproyecto"] 1778383636.67171 "segundoproyecto.bcf" "segundoproyecto.bbl" "segundoproyecto" 1779834327.61916 0
   "literatura.bib" 1778383613 2295 de840f8a4eb965ca5093589722249e7f ""
-  "segundoproyecto.bcf" 1778384567 107177 1b6deb7c864719e6310aba2f7bdeddb3 "pdflatex"
+  "segundoproyecto.bcf" 1779834327 107177 1b6deb7c864719e6310aba2f7bdeddb3 "pdflatex"
   (generated)
   "segundoproyecto.bbl"
   "segundoproyecto.blg"
   (rewritten before read)
-["pdflatex"] 1778384565.42283 "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/segundoproyecto.tex" "segundoproyecto.pdf" "segundoproyecto" 1778384567.49251 0
+["pdflatex"] 1779834324.9303 "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/segundoproyecto.tex" "segundoproyecto.pdf" "segundoproyecto" 1779834327.61996 0
   "C:/Users/matia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1775790566 124346 55158e4ffab625ef9c37e66c4ee22ffe ""
   "C:/Users/matia/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1741727281 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/matia/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1741727284 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -240,16 +240,21 @@
   "C:/Users/matia/AppData/Local/Programs/MiKTeX/tex/latex/was/icomma.sty" 1665850770 1018 df058db1896806f044e2233bb506d425 ""
   "C:/Users/matia/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/matia/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/segundoproyecto.tex" 1778384564 11747 e78e199c2bb29e0c1b4c2d743457c4d9 ""
+  "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/segundoproyecto.tex" 1779834321 12932 4757a94a3fe521e6e833d3906be1d6bf ""
+  "fig/PWM.png" 1779833479 28516 50dc3cf971711e15ec3f82ef383d6630 ""
+  "fig/SenoConPWm.png" 1779833468 189490 6c9ca260af0596e367c697873f1357b9 ""
+  "fig/SenoContraTriangular.png" 1779831320 189313 0f8056396efd82fe4868e50ac2fedb62 ""
+  "fig/SenoSola.png" 1779831616 40522 6b42622640a411e30619cd27421c45d6 ""
+  "fig/TriangularYcuadrada.png" 1779832015 57221 f976e0ccd21fba31a36880731f339089 ""
   "fig/WienPrimaria.png" 1777247183 59489 308981e016a0e23c470a3ca32bc7a7d1 ""
   "fig/wienPUENTE.pdf" 1778384370 83944 0a3b44fc5fefefb42ac4ce57d3fa4600 ""
   "instructivo.sty" 1775789955 9971 8ec5358d70caf21040f8bc9bbe4a7a0d ""
-  "segundoproyecto.aux" 1778384567 3992 29477bba3b26063e33bcef0af42ec399 "pdflatex"
+  "segundoproyecto.aux" 1779834327 5727 5c0203809743223fd082304bd9de174f "pdflatex"
   "segundoproyecto.bbl" 1778383638 3875 562ad17eb92d20090409d2cdbefe7bb6 "biber segundoproyecto"
-  "segundoproyecto.out" 1778384567 2401 52549657dac97b257b7fe2aab0ed1d7d "pdflatex"
-  "segundoproyecto.run.xml" 1778384567 2490 c61b8dbce6449010f052c88fe3280945 "pdflatex"
-  "segundoproyecto.tex" 1778384564 11747 e78e199c2bb29e0c1b4c2d743457c4d9 ""
-  "segundoproyecto.toc" 1778384567 1318 d586c8e003b1b9de4a882b20ccd2f606 "pdflatex"
+  "segundoproyecto.out" 1779834327 2401 52549657dac97b257b7fe2aab0ed1d7d "pdflatex"
+  "segundoproyecto.run.xml" 1779834327 2490 c61b8dbce6449010f052c88fe3280945 "pdflatex"
+  "segundoproyecto.tex" 1779834321 12932 4757a94a3fe521e6e833d3906be1d6bf ""
+  "segundoproyecto.toc" 1779834327 1318 2c3e63bafa1568db2d577ebc623a2935 "pdflatex"
   (generated)
   "segundoproyecto.aux"
   "segundoproyecto.bcf"

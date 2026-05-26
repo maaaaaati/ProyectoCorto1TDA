@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  9 MAY 2026 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  26 MAY 2026 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1333,10 +1333,37 @@ File: ./fig/WienPrimaria.png Graphic file (type png)
 <use ./fig/WienPrimaria.png>
 Package pdftex.def Info: ./fig/WienPrimaria.png  used on input line 206.
 (pdftex.def)             Requested size: 300.29344pt x 268.58078pt.
+<fig/SenoSola.png, id=508, 361.35pt x 216.81pt>
+File: fig/SenoSola.png Graphic file (type png)
+<use fig/SenoSola.png>
+Package pdftex.def Info: fig/SenoSola.png  used on input line 217.
+(pdftex.def)             Requested size: 300.29344pt x 180.1772pt.
+ [5 <./fig/WienPrimaria.png>]
+<fig/TriangularYcuadrada.png, id=517, 363.102pt x 222.942pt>
+File: fig/TriangularYcuadrada.png Graphic file (type png)
+<use fig/TriangularYcuadrada.png>
+Package pdftex.def Info: fig/TriangularYcuadrada.png  used on input line 224.
+(pdftex.def)             Requested size: 300.29344pt x 184.37845pt.
+<fig/SenoContraTriangular.png, id=518, 361.35pt x 217.248pt>
+File: fig/SenoContraTriangular.png Graphic file (type png)
+<use fig/SenoContraTriangular.png>
+Package pdftex.def Info: fig/SenoContraTriangular.png  used on input line 231.
+(pdftex.def)             Requested size: 300.29344pt x 180.5412pt.
+<fig/PWM.png, id=519, 359.598pt x 216.153pt>
+File: fig/PWM.png Graphic file (type png)
+<use fig/PWM.png>
+Package pdftex.def Info: fig/PWM.png  used on input line 238.
+(pdftex.def)             Requested size: 300.29344pt x 180.50525pt.
+ [6 <./fig/SenoSola.png> <./fig/TriangularYcuadrada.png> <./fig/SenoContraTriangular.png>]
+<fig/SenoConPWm.png, id=530, 361.131pt x 212.211pt>
+File: fig/SenoConPWm.png Graphic file (type png)
+<use fig/SenoConPWm.png>
+Package pdftex.def Info: fig/SenoConPWm.png  used on input line 245.
+(pdftex.def)             Requested size: 300.29344pt x 176.46213pt.
 \tf@thm=\write7
 \openout7 = `segundoproyecto.thm'.
 
- [5 <./fig/WienPrimaria.png>] (segundoproyecto.aux
+ [7 <./fig/PWM.png> <./fig/SenoConPWm.png>] (segundoproyecto.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -1352,17 +1379,17 @@ Package logreq Info: Writing requests to 'segundoproyecto.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38891 strings out of 474486
- 783220 string characters out of 5743755
+ 38938 strings out of 474486
+ 784342 string characters out of 5743755
  1938542 words of memory out of 5000000
- 60534 multiletter control sequences out of 15000+600000
+ 60574 multiletter control sequences out of 15000+600000
  683881 words of font info for 157 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  99i,7n,101p,1376b,1926s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on segundoproyecto.pdf (5 pages, 238423 bytes).
+Output written on segundoproyecto.pdf (7 pages, 568789 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 588 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 
