@@ -78,13 +78,16 @@
 
 % Se sugiere no más de cuatro palabras o frases cortas en orden alfabético, separadas por comas, que representen su reporte
 \begin{IEEEkeywords}
-Diodo, tensión, corriente, junta, ruptura.
+Comparador, PWM, Schmitt trigger, Wien.
 \end{IEEEkeywords}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introducción}
+
+El objetivo principal del proyecto es diseñar y simular circuitos electrónicos analógicos capaces de generar y procesar señales analógicas. Para ello, se propone investigar preliminarmente conceptos teóricos sobre modulación por ancho de pulso (PWM), circuitos
+comparadores y generación de formas de onda. También se plantea desarrollar un sistema analógico capaz de ajustarse a las especificaciones, por ejemplo, de frecuencia, amplitud, entre otras características, y comprobar el funcionamiento del sistema con mediciones.
 
 \subsection{Generación de Formas de Onda}
 
@@ -226,12 +229,16 @@ Se midieron las señales de salida de cada etapa.
   \label{fig:TriangularYcuadrada}
 \end{figure}
 
+Los resultados obtenidos muestran que las señales medidas cumplen con las frecuencias deseadas así como amplitudes (100~Hz y 5~kHz para la senoidal y para la triangular, respectivamente, con amplitudes de 2~V y 2.1~V.).
+
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.6\linewidth]{fig/SenoContraTriangular.png} 
   \caption{Señales senoidal y triangular}
   \label{fig:SenoContraTriangular}
 \end{figure}
+
+También se pudo observar cómo la señal senoidal fue comparada contra la triangular, de manera que se logró un índice de modulación de aproximadamente 0.95.
 
 \begin{figure}[H]
   \centering
@@ -253,7 +260,8 @@ Se midieron las señales de salida de cada etapa.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusiones}
-
+Se logró fundamentar con una investigación teórica conceptos como PWM, el funcionamiento de comparadores y la generación de formas de onda con amplificadores operacionales. También se logró desarrollar un sistema analógico con base en distintas especificaciones, y el funcionamiento correcto de este se comprobó
+con mediciones realizadas en osciloscopio.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

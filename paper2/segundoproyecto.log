@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  26 MAY 2026 16:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  27 MAY 2026 14:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1325,40 +1325,40 @@ File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 <./fig/wienPUENTE.pdf, id=114, 490.83376pt x 259.97125pt>
 File: ./fig/wienPUENTE.pdf Graphic file (type pdf)
 <use ./fig/wienPUENTE.pdf>
-Package pdftex.def Info: ./fig/wienPUENTE.pdf  used on input line 129.
+Package pdftex.def Info: ./fig/wienPUENTE.pdf  used on input line 132.
 (pdftex.def)             Requested size: 300.29344pt x 159.05428pt.
  [4 <./fig/wienPUENTE.pdf>]
 <./fig/WienPrimaria.png, id=506, 620.3175pt x 554.82281pt>
 File: ./fig/WienPrimaria.png Graphic file (type png)
 <use ./fig/WienPrimaria.png>
-Package pdftex.def Info: ./fig/WienPrimaria.png  used on input line 206.
+Package pdftex.def Info: ./fig/WienPrimaria.png  used on input line 209.
 (pdftex.def)             Requested size: 300.29344pt x 268.58078pt.
 <fig/SenoSola.png, id=508, 361.35pt x 216.81pt>
 File: fig/SenoSola.png Graphic file (type png)
 <use fig/SenoSola.png>
-Package pdftex.def Info: fig/SenoSola.png  used on input line 217.
+Package pdftex.def Info: fig/SenoSola.png  used on input line 220.
 (pdftex.def)             Requested size: 300.29344pt x 180.1772pt.
  [5 <./fig/WienPrimaria.png>]
 <fig/TriangularYcuadrada.png, id=517, 363.102pt x 222.942pt>
 File: fig/TriangularYcuadrada.png Graphic file (type png)
 <use fig/TriangularYcuadrada.png>
-Package pdftex.def Info: fig/TriangularYcuadrada.png  used on input line 224.
+Package pdftex.def Info: fig/TriangularYcuadrada.png  used on input line 227.
 (pdftex.def)             Requested size: 300.29344pt x 184.37845pt.
 <fig/SenoContraTriangular.png, id=518, 361.35pt x 217.248pt>
 File: fig/SenoContraTriangular.png Graphic file (type png)
 <use fig/SenoContraTriangular.png>
-Package pdftex.def Info: fig/SenoContraTriangular.png  used on input line 231.
+Package pdftex.def Info: fig/SenoContraTriangular.png  used on input line 236.
 (pdftex.def)             Requested size: 300.29344pt x 180.5412pt.
-<fig/PWM.png, id=519, 359.598pt x 216.153pt>
+ [6 <./fig/SenoSola.png> <./fig/TriangularYcuadrada.png> <./fig/SenoContraTriangular.png>]
+<fig/PWM.png, id=529, 359.598pt x 216.153pt>
 File: fig/PWM.png Graphic file (type png)
 <use fig/PWM.png>
-Package pdftex.def Info: fig/PWM.png  used on input line 238.
+Package pdftex.def Info: fig/PWM.png  used on input line 245.
 (pdftex.def)             Requested size: 300.29344pt x 180.50525pt.
- [6 <./fig/SenoSola.png> <./fig/TriangularYcuadrada.png> <./fig/SenoContraTriangular.png>]
 <fig/SenoConPWm.png, id=530, 361.131pt x 212.211pt>
 File: fig/SenoConPWm.png Graphic file (type png)
 <use fig/SenoConPWm.png>
-Package pdftex.def Info: fig/SenoConPWm.png  used on input line 245.
+Package pdftex.def Info: fig/SenoConPWm.png  used on input line 252.
 (pdftex.def)             Requested size: 300.29344pt x 176.46213pt.
 \tf@thm=\write7
 \openout7 = `segundoproyecto.thm'.
@@ -1387,7 +1387,7 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  99i,7n,101p,1376b,1926s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on segundoproyecto.pdf (7 pages, 568789 bytes).
+Output written on segundoproyecto.pdf (7 pages, 569794 bytes).
 PDF statistics:
  588 PDF objects out of 1000 (max. 8388607)
  40 named destinations out of 1000 (max. 500000)
