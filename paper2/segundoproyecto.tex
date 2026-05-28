@@ -201,6 +201,25 @@ $R_1$:
     \label{eq:Ri_integrador}
 \end{equation}
 
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{Circuito_onda_triangular.png}
+        \caption{Circuito Schmitt Trigger e Integrador}
+        \label{fig:Schmitt_integrador}
+\end{figure}
+
+\subsection{Comparador}
+
+Como se mencionó anteriormente, para generar la señal PWM se toma la señal senoidal y se compara con la señal triangular. Ambas señales van en las entradas del comparador, y para la salida, se conecta una carga en serie con una fuente CD de 5V para que la señal PWM quede acotada de 0 a 5V. 
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{PWM_circuito_completo.png}
+        \caption{Circuito generador de señal PWM}
+        \label{fig:PWM_completo}
+\end{figure}
+
+
 \section{Simulaciones y análisis}
 \subsection{Puente de Wien}
 Para la simulación del puente de Wien, se utilizó Multisim. Para poder lograr que el circuito se iniciara por sí solo, se utilizó potenciómetros para variar la ganancia y así obtener oscilaciones.
@@ -210,6 +229,28 @@ Para la simulación del puente de Wien, se utilizó Multisim. Para poder lograr 
         \caption{Onda de salida del puente de Wien.}
         \label{fig:wienprimaria}
 \end{figure}
+
+\subsection{Schmitt Trigger e Integrador}
+
+Se muestran los resultados de la simulación de la onda triangular, donde se pueden observar la onda cuadrada que genera el disparador y la salida del integrador que corresponde a la señal triangular, esta última cumpliendo con las especificaciones de frecuencia y amplitud de onda. 
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{Señal_triangular_simulacion.png}
+        \caption{Onda de salida del Schmitt Trigger e Integrador.}
+        \label{fig:triangularsimu}
+\end{figure}
+
+\subsection{Comparador}
+
+Una vez implementadas todas las etapas para generar la señal PWM, se obtienen los siguientes resultados en simulación, respetando la acotación de 0 a 5V de la onda. 
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{Señal_PWM_simulación.png}
+        \caption{Onda de salida PWM}
+        \label{fig:pwmsimulada}
+\end{figure}
+
 
 \section{Resultados Experimentales}
 Se llevó a cabo la implementación física del sistema utilizando los circuitos integrados TL082 como amplificadores operacionales y el LM393 como comparador.
