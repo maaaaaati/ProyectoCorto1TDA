@@ -9,7 +9,10 @@
 \contentsline {subsection}{\numberline {\mbox {II-B}}Generador de Onda Triangular}{4}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {\mbox {II-B}1}Bloque 1: Disparador Schmitt}{4}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {\mbox {II-B}2}Bloque 2: Integrador}{5}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {\mbox {II-C}}Comparador}{5}{subsection.2.3}%
 \contentsline {section}{\numberline {III}Simulaciones y análisis}{5}{section.3}%
 \contentsline {subsection}{\numberline {\mbox {III-A}}Puente de Wien}{5}{subsection.3.1}%
-\contentsline {section}{\numberline {IV}Resultados Experimentales}{5}{section.4}%
-\contentsline {section}{\numberline {V}Conclusiones}{7}{section.5}%
+\contentsline {subsection}{\numberline {\mbox {III-B}}Schmitt Trigger e Integrador}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {\mbox {III-C}}Comparador}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {IV}Resultados Experimentales}{7}{section.4}%
+\contentsline {section}{\numberline {V}Conclusiones}{9}{section.5}%
