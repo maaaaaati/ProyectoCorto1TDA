@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  28 MAY 2026 16:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.11)  29 MAY 2026 20:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/segundoproyecto.tex
-(c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/segundoproyecto.tex
+**c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/proyecto_final.tex
+(c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/proyecto_final.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
@@ -1139,11 +1139,11 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 46.
 (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
-) (segundoproyecto.aux
+) (proyecto_final.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 )
-\openout1 = `segundoproyecto.aux'.
+\openout1 = `proyecto_final.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
@@ -1240,9 +1240,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 46.
- (segundoproyecto.out) (segundoproyecto.out)
+ (proyecto_final.out) (proyecto_final.out)
 \@outlinefile=\write5
-\openout5 = `segundoproyecto.out'.
+\openout5 = `proyecto_final.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1287,14 +1287,14 @@ File: spanish.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `segundoproyecto.bcf'.
+\openout4 = `proyecto_final.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'segundoproyecto.bbl' found.
- (segundoproyecto.bbl)
+Package biblatex Info: ... file 'proyecto_final.bbl' found.
+ (proyecto_final.bbl)
 Package biblatex Info: Reference section=0 on input line 46.
 Package biblatex Info: Reference segment=0 on input line 46.
- [1{C:/Users/matia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] (segundoproyecto.toc
+ [1{C:/Users/matia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] (proyecto_final.toc
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1315,77 +1315,43 @@ LaTeX Font Info:    Trying to load font information for U+trsy on input line 3.
 File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 ))
 \tf@toc=\write6
-\openout6 = `segundoproyecto.toc'.
+\openout6 = `proyecto_final.toc'.
 
  [2
 
-] [3
-
 ]
-<./fig/wienPUENTE.pdf, id=132, 490.83376pt x 259.97125pt>
-File: ./fig/wienPUENTE.pdf Graphic file (type pdf)
-<use ./fig/wienPUENTE.pdf>
-Package pdftex.def Info: ./fig/wienPUENTE.pdf  used on input line 132.
-(pdftex.def)             Requested size: 300.29344pt x 159.05428pt.
- [4 <./fig/wienPUENTE.pdf>]
-<./fig/Circuito_onda_triangular.png, id=524, 487.8225pt x 211.28937pt>
-File: ./fig/Circuito_onda_triangular.png Graphic file (type png)
-<use ./fig/Circuito_onda_triangular.png>
-Package pdftex.def Info: ./fig/Circuito_onda_triangular.png  used on input line 206.
-(pdftex.def)             Requested size: 300.29344pt x 130.06631pt.
-<./fig/PWM_circuito_completo.png, id=526, 445.665pt x 264.99pt>
-File: ./fig/PWM_circuito_completo.png Graphic file (type png)
-<use ./fig/PWM_circuito_completo.png>
-Package pdftex.def Info: ./fig/PWM_circuito_completo.png  used on input line 217.
-(pdftex.def)             Requested size: 300.29344pt x 178.55322pt.
-<./fig/WienPrimaria.png, id=527, 620.3175pt x 554.82281pt>
-File: ./fig/WienPrimaria.png Graphic file (type png)
-<use ./fig/WienPrimaria.png>
-Package pdftex.def Info: ./fig/WienPrimaria.png  used on input line 228.
-(pdftex.def)             Requested size: 300.29344pt x 268.58078pt.
- [5 <./fig/Circuito_onda_triangular.png> <./fig/PWM_circuito_completo.png>]
-<./fig/Señal_triangular_simulacion.png, id=538, 410.53375pt x 300.62312pt>
-File: ./fig/Señal_triangular_simulacion.png Graphic file (type png)
-<use ./fig/Señal_triangular_simulacion.png>
-Package pdftex.def Info: ./fig/Señal_triangular_simulacion.png  used on input line 239.
-(pdftex.def)             Requested size: 300.29344pt x 219.8934pt.
-<./fig/Señal_PWM_simulación.png, id=539, 410.03188pt x 299.61937pt>
-File: ./fig/Señal_PWM_simulación.png Graphic file (type png)
-<use ./fig/Señal_PWM_simulación.png>
-Package pdftex.def Info: ./fig/Señal_PWM_simulación.png  used on input line 249.
-(pdftex.def)             Requested size: 300.29344pt x 219.44724pt.
- [6 <./fig/WienPrimaria.png> <./fig/Señal_triangular_simulacion.png>]
-<fig/SenoSola.png, id=548, 361.35pt x 216.81pt>
-File: fig/SenoSola.png Graphic file (type png)
-<use fig/SenoSola.png>
-Package pdftex.def Info: fig/SenoSola.png  used on input line 261.
-(pdftex.def)             Requested size: 300.29344pt x 180.1772pt.
-<fig/TriangularYcuadrada.png, id=549, 363.102pt x 222.942pt>
-File: fig/TriangularYcuadrada.png Graphic file (type png)
-<use fig/TriangularYcuadrada.png>
-Package pdftex.def Info: fig/TriangularYcuadrada.png  used on input line 268.
-(pdftex.def)             Requested size: 300.29344pt x 184.37845pt.
- [7 <./fig/Señal_PWM_simulación.png> <./fig/SenoSola.png>]
-<fig/SenoContraTriangular.png, id=559, 361.35pt x 217.248pt>
-File: fig/SenoContraTriangular.png Graphic file (type png)
-<use fig/SenoContraTriangular.png>
-Package pdftex.def Info: fig/SenoContraTriangular.png  used on input line 277.
-(pdftex.def)             Requested size: 300.29344pt x 180.5412pt.
-<fig/PWM.png, id=560, 359.598pt x 216.153pt>
-File: fig/PWM.png Graphic file (type png)
-<use fig/PWM.png>
-Package pdftex.def Info: fig/PWM.png  used on input line 286.
-(pdftex.def)             Requested size: 300.29344pt x 180.50525pt.
- [8 <./fig/TriangularYcuadrada.png> <./fig/SenoContraTriangular.png>]
-<fig/SenoConPWm.png, id=569, 361.131pt x 212.211pt>
-File: fig/SenoConPWm.png Graphic file (type png)
-<use fig/SenoConPWm.png>
-Package pdftex.def Info: fig/SenoConPWm.png  used on input line 293.
-(pdftex.def)             Requested size: 300.29344pt x 176.46213pt.
-\tf@thm=\write7
-\openout7 = `segundoproyecto.thm'.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 104.
+ (C:\Users\matia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+<./fig/FiltroEsquematico.pdf, id=103, 442.65375pt x 177.66376pt>
+File: ./fig/FiltroEsquematico.pdf Graphic file (type pdf)
+<use ./fig/FiltroEsquematico.pdf>
+Package pdftex.def Info: ./fig/FiltroEsquematico.pdf  used on input line 109.
+(pdftex.def)             Requested size: 300.29344pt x 120.53323pt.
+<./fig/BufferEsquematico.pdf, id=104, 256.96pt x 177.66376pt>
+File: ./fig/BufferEsquematico.pdf Graphic file (type pdf)
+<use ./fig/BufferEsquematico.pdf>
+Package pdftex.def Info: ./fig/BufferEsquematico.pdf  used on input line 121.
+(pdftex.def)             Requested size: 175.17244pt x 121.11607pt.
+<fig/GananciaFiltro.png, id=106, 363.321pt x 234.111pt>
+File: fig/GananciaFiltro.png Graphic file (type png)
+<use fig/GananciaFiltro.png>
+Package pdftex.def Info: fig/GananciaFiltro.png  used on input line 150.
+(pdftex.def)             Requested size: 300.29344pt x 193.50116pt.
+ [3
 
- [9 <./fig/PWM.png> <./fig/SenoConPWm.png>] (segundoproyecto.aux
+ <./fig/FiltroEsquematico.pdf> <./fig/BufferEsquematico.pdf
+
+pdfTeX warning: pdflatex (file ./fig/BufferEsquematico.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Empty bibliography on input line 175.
+
+\tf@thm=\write7
+\openout7 = `proyecto_final.thm'.
+
+[4 <./fig/GananciaFiltro.png>] (proyecto_final.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -1394,24 +1360,24 @@ LaTeX Info: Redefining \% on input line 13.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `segundoproyecto.out' has not changed.
-(rerunfilecheck)             Checksum: 13D2976E97DE34F2F1B43F0EE1D8326D;2824.
-Package logreq Info: Writing requests to 'segundoproyecto.run.xml'.
-\openout1 = `segundoproyecto.run.xml'.
+Package rerunfilecheck Info: File `proyecto_final.out' has not changed.
+(rerunfilecheck)             Checksum: EC819AAFE856B1DBEB74F5FCB47AFEFB;1747.
+Package logreq Info: Writing requests to 'proyecto_final.run.xml'.
+\openout1 = `proyecto_final.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38990 strings out of 474486
- 785998 string characters out of 5743755
- 1938542 words of memory out of 5000000
- 60617 multiletter control sequences out of 15000+600000
- 683881 words of font info for 157 fonts, out of 8000000 for 9000
+ 38697 strings out of 474486
+ 779152 string characters out of 5743755
+ 1934542 words of memory out of 5000000
+ 60346 multiletter control sequences out of 15000+600000
+ 684194 words of font info for 158 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 99i,7n,101p,1376b,1926s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on segundoproyecto.pdf (9 pages, 692607 bytes).
+ 99i,6n,101p,1209b,1926s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/matia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on proyecto_final.pdf (4 pages, 214303 bytes).
 PDF statistics:
- 628 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 204 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 507 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
+ 140 words of extra memory for PDF output out of 10000 (max. 10000000)
 
