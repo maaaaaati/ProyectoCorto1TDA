@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber proyecto_final"] 1780105284.95264 "proyecto_final.bcf" "proyecto_final.bbl" "proyecto_final" 1780107100.11902 0
-  "proyecto_final.bcf" 1780107099 106909 00a202e4accf4e974b238942a4752a3a "pdflatex"
+["biber proyecto_final"] 1780105284.95264 "proyecto_final.bcf" "proyecto_final.bbl" "proyecto_final" 1780107345.4313 0
+  "proyecto_final.bcf" 1780107345 106909 00a202e4accf4e974b238942a4752a3a "pdflatex"
   (generated)
   "proyecto_final.bbl"
   "proyecto_final.blg"
   (rewritten before read)
-["pdflatex"] 1780107098.06145 "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/proyecto_final.tex" "proyecto_final.pdf" "proyecto_final" 1780107100.11979 0
+["pdflatex"] 1780107341.97433 "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/proyecto_final.tex" "proyecto_final.pdf" "proyecto_final" 1780107345.43212 0
   "C:/Users/matia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1775790566 124346 55158e4ffab625ef9c37e66c4ee22ffe ""
   "C:/Users/matia/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1741727281 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/matia/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1741727284 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -237,17 +237,17 @@
   "C:/Users/matia/AppData/Local/Programs/MiKTeX/tex/latex/was/icomma.sty" 1665850770 1018 df058db1896806f044e2233bb506d425 ""
   "C:/Users/matia/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/matia/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/proyecto_final.tex" 1780107097 5707 1078422efc239b2691e53d66f49600dd ""
+  "c:/Users/matia/Downloads/ProyectoCorto1TDA/paper2/proyecto_final.tex" 1780107340 5707 1078422efc239b2691e53d66f49600dd ""
   "fig/BufferEsquematico.pdf" 1780106095 36303 4fd5781ff5b43241404dbe68fd507dd7 ""
   "fig/FiltroEsquematico.pdf" 1780106072 65469 3c93862606f0c3bf9e4ab06deb1574a2 ""
-  "fig/GananciaFiltro.png" 1780105229 62946 0f1e533eb7d78520ca9e5d5d33471745 ""
+  "fig/GananciaFiltro.png" 1780107325 59728 99510b176e809a9529889e69d2e556e1 ""
   "instructivo.sty" 1775789955 9971 8ec5358d70caf21040f8bc9bbe4a7a0d ""
-  "proyecto_final.aux" 1780107099 3334 86a2b480f554af8c16da3fc86ef9a6d5 "pdflatex"
+  "proyecto_final.aux" 1780107345 3334 86a2b480f554af8c16da3fc86ef9a6d5 "pdflatex"
   "proyecto_final.bbl" 1780105296 486 ee04f40f768daeed26442158e95aba61 "biber proyecto_final"
-  "proyecto_final.out" 1780107099 1747 ec819aafe856b1dbeb74f5fcb47afefb "pdflatex"
-  "proyecto_final.run.xml" 1780107099 2483 8b01c46f1f46b4f447cee4bf0626b6c0 "pdflatex"
-  "proyecto_final.tex" 1780107097 5707 1078422efc239b2691e53d66f49600dd ""
-  "proyecto_final.toc" 1780107099 1191 a07b8fb2f26b45dc8e4101f05fb4e15c "pdflatex"
+  "proyecto_final.out" 1780107345 1747 ec819aafe856b1dbeb74f5fcb47afefb "pdflatex"
+  "proyecto_final.run.xml" 1780107345 2483 8b01c46f1f46b4f447cee4bf0626b6c0 "pdflatex"
+  "proyecto_final.tex" 1780107340 5707 1078422efc239b2691e53d66f49600dd ""
+  "proyecto_final.toc" 1780107345 1191 a07b8fb2f26b45dc8e4101f05fb4e15c "pdflatex"
   (generated)
   "proyecto_final.aux"
   "proyecto_final.bcf"
