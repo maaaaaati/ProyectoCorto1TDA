@@ -142,15 +142,61 @@ Sus características principales son:
 
 \subsection{Puente Wheatstone}
 
+Para la primera etapa del proyecto se diseñó un puente de Wheatstone que cumpliera con los siguientes requisitos: valor nominal de $R_{sensor} = 1.20\,\text{k}\Omega$, rango de variación de $R_{sensor}$ entre $1.15\,\text{k}\Omega$ y $1.25\,\text{k}\Omega$, y voltaje diferencial de $\pm 25\,\text{mV}$.
+
+A partir de estos requisitos, se plantea un puente con resistencias de  $1.2\,\text{k}\Omega$, y para $R_{sensor}$ una resistencia de $1.15\,\text{k}\Omega$ en serie con un potenciómetro de $100\,\Omega$, de modo que $R_{sensor}$ varíe entre $1.15\,\text{k}\Omega$ y $1.25\,\text{k}\Omega$.
+
+Para la alimentación del puente se seleccionaron $2.35\,\text{V}$, de forma que se cumplan las siguientes condiciones:
+
+\begin{itemize}
+    \item Cuando $R_{sensor} = 1.15\,\text{k}\Omega$, el voltaje diferencial es 
+    $V_{diff} = -25\,\text{mV}$.
+    \item Cuando $R_{sensor} = 1.20\,\text{k}\Omega$, el voltaje diferencial es 
+    $V_{diff} = 0\,\text{V}$.
+    \item Cuando $R_{sensor} = 1.25\,\text{k}\Omega$, el voltaje diferencial es 
+    $V_{diff} = +25\,\text{mV}$.
+\end{itemize}
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{puentediseno.png}
+        \caption{Puente de Wheatstone}
+        \label{fig:puentewheat}
+\end{figure}
+
+\subsection{Amplificador de Instrumentación}
+
+Para la etapa del amplificador de instrumentación, se requiere que este convierta el voltaje diferencial del puente de Wheatstone a los siguientes valores:
+
+\begin{itemize}
+    \item $-25\,\text{mV}$ se convierten en $0\,\text{V}$.
+    \item $0\,\text{V}$ se convierten en $2.5\,\text{V}$.
+    \item $+25\,\text{mV}$ se convierten en $5\,\text{V}$.
+\end{itemize}
+
+Se eligió implementar el circuito integrado INA128, el cual es un amplificador de instrumentación que convierte los $\pm 25\,\text{mV}$ de entrada a $\pm 2.5\,\text{V}$. Adicionalmente, el dispositivo dispone de un pin de referencia al cual se le aplica un voltaje de $2.5\,\text{V}$, que introduce un offset a la salida del amplificador, dando como resultado un rango de salida de $0\,\text{V}$ a $5\,\text{V}$.
+
+Para este circuito se requiere una ganancia de $G = 100$. De acuerdo con la ecuación característica del INA128:
+
+\begin{equation}
+    G = 1 + \frac{50\,\text{k}\Omega}{R_G}
+\end{equation}
+
+despejando $R_G$:
+
+\begin{equation}
+    R_G = \frac{50\,\text{k}\Omega}{G - 1} = \frac{50\,\text{k}\Omega}{99} \approx 505\,\Omega
+\end{equation}
+
 \subsection{Filtro anti-aliasing}
 El filtro anti-aliasing es la última etapa de acondicionamiento de la señal junto al buffer. Se diseñó el filtro asumiendo alimentación de ±~12~V con un amplificador operacional TL082.
 El filtro escogido fue un filtro tipo Butterworth de segundo orden pasabajas con ganancia unitaria, cuya frecuencia de corte se definió en 1~kHz. También se diseñó con una atenuación mínima de 20~dB como objetivo a 5~kHz.
 
 \begin{figure}[H]
         \centering
-        \includegraphics[width=0.6\linewidth]{FiltroEsquematico.pdf}
-        \caption{Circuito del filtro anti-aliasing}
-        \label{fig:filtroEsquematico}
+        \includegraphics[width=0.6\linewidth]{ina128.png}
+        \caption{Diseño del INA128}
+        \label{fig:ina128}
 \end{figure}
 
 
