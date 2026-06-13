@@ -131,9 +131,18 @@ Sus características principales son:
     o puentes de Wheatstone.
 \end{itemize}
 
-\subsection{Teorema de Muestreo} 
-\subsection{Filtrado anti-aliasing} 
-\subsection{Convertidores Analógico – Digital (ADC)} 
+\subsection{Teorema de Muestreo}
+El teorema de muestreo de Nyquist-Shannon es fundamental en el procesamiento digital de señales ya que dicta las condiciones matemáticas bajo las cuales una señal continua en el tiempo puede ser discretizada sin perder información. El teorema establece que, para evitar la pérdida de datos, la frecuencia de muestreo ($f_s$) debe ser estrictamente mayor al doble de la componente de frecuencia más alta ($f_{max}$) contenida en la señal analógica original:
+\begin{equation}
+    f_s > 2 \cdot f_{max}
+\end{equation}
+La mitad de la tasa de muestreo ($f_s / 2$) se conoce como la frecuencia de Nyquist. Si la señal de entrada posee componentes espectrales que superan este límite, se genera el fenómeno de \textit{aliasing} o solapamiento, en el cual las altas frecuencias se introducen sobre el espectro de bajas frecuencias. Esto genera una distorsión irreversible que impide la reconstrucción exacta de la señal original. Para el sistema analizado, se proyecta una frecuencia crítica de Nyquist establecida en $5\text{ kHz}$.
+
+\subsection{Filtrado anti-aliasing}
+Para garantizar de forma práctica las condiciones impuestas por el teorema de muestreo, es importante acondicionar la señal mediante un filtro analógico pasa-bajas antes de que ingrese al convertidor digital. El filtro \textit{anti-aliasing} cumple la función de mitigar cualquier componente de ruido térmico, interferencia ambiental o armónico de alta frecuencia que supere el límite de Nyquist. En este trabajo se implementa un filtro tipo Butterworth de segundo orden de ganancia unitaria, cuya frecuencia de corte se definió en $1\text{ kHz}$. Esta topología ofrece una respuesta en magnitud lo más plana posible en la banda de paso, asegurando a su vez una caída lo suficientemente fuerte como para alcanzar el objetivo de una atenuación mínima de $20\text{ dB}$ al llegar a los $5\text{ kHz}$.
+
+\subsection{Convertidores Analógico – Digital (ADC)}
+El convertidor analógico-digital es el dispositivo encargado de realizar la transición entre el dominio analógico continuo y el dominio digital discreto. Esta operación se ejecuta mediante los procesos sucesivos de muestreo (discretización en el tiempo), retención (mantenimiento del valor de tensión estable durante la conversión), cuantización (discretización en amplitud mediante niveles finitos) y codificación (asignación de una palabra binaria). La cuantización introduce de forma intrínseca un error de redondeo conocido como ruido de cuantización, el cual depende directamente de la resolución en bits del circuito integrado. Para la etapa experimental de este proyecto, se utiliza un convertidor de la serie ADC08, el cual provee una arquitectura de 8 bits que permite codificar el rango dinámico acondicionado en un total de $2^8 = 256$ combinaciones binarias discretas. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
