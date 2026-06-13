@@ -16,5 +16,70 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Horowitz1989}{book}{}
+      \name{author}{2}{}{%
+        {{hash=824849c061562c13dda5359277abcbe0}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a6f0ca7031291d4aeed4a0ba41460b02}{%
+           family={Hill},
+           familyi={H\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{b45afa59dd1ebe0091dd0e1ae5b3dd39}
+      \strng{fullhash}{b45afa59dd1ebe0091dd0e1ae5b3dd39}
+      \strng{bibnamehash}{b45afa59dd1ebe0091dd0e1ae5b3dd39}
+      \strng{authorbibnamehash}{b45afa59dd1ebe0091dd0e1ae5b3dd39}
+      \strng{authornamehash}{b45afa59dd1ebe0091dd0e1ae5b3dd39}
+      \strng{authorfullhash}{b45afa59dd1ebe0091dd0e1ae5b3dd39}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0521370957}
+      \field{title}{The Art of Electronics}
+      \field{year}{1989}
+    \endentry
+    \entry{Mancini2002}{book}{}
+      \name{author}{1}{}{%
+        {{hash=95df8473c33ab1b972e223ec8397b522}{%
+           family={Mancini},
+           familyi={M\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Dallas, TX, USA}%
+      }
+      \list{publisher}{1}{%
+        {Texas Instruments}%
+      }
+      \strng{namehash}{95df8473c33ab1b972e223ec8397b522}
+      \strng{fullhash}{95df8473c33ab1b972e223ec8397b522}
+      \strng{bibnamehash}{95df8473c33ab1b972e223ec8397b522}
+      \strng{authorbibnamehash}{95df8473c33ab1b972e223ec8397b522}
+      \strng{authornamehash}{95df8473c33ab1b972e223ec8397b522}
+      \strng{authorfullhash}{95df8473c33ab1b972e223ec8397b522}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Op Amps for Everyone}
+      \field{year}{2002}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
