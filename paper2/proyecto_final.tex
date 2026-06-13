@@ -292,16 +292,14 @@ La simulación del buffer se realizó utilizando el modelo del TL082, alimentado
 
 \subsection{ADC}
 
-La validación del bloque de conversión se realizó en Multisim utilizando un modelo genérico de ADC de 8 bits. Para evitar el bloqueo inicial (\textit{deadlock}) característico de los modelos matemáticos ideales cuando se realimenta el fin de conversión de forma directa, el pin \text{SOC} (\textit{Start of Conversion}) fue estimulado de manera externa mediante una fuente \text{DIGITAL\_CLOCK} parametrizada a una frecuencia exacta de $10\text{ kHz}$, garantizando de forma estricta la tasa de adquisición del enunciado. El rango dinámico de entrada se delimitó conectando el terminal \text{Vref+} a la fuente ideal de $5\text{ V}$ y \text{Vref-} a la tierra general del esquema.
+La validación del bloque de conversión se realizó en Multisim utilizando un modelo genérico de ADC de 8 bits. Para evitar el bloqueo inicial (\textit{deadlock}) cuando se realimenta el fin de conversión de forma directa, el pin \text{SOC} (\textit{Start of Conversion}) fue estimulado de manera externa mediante una fuente \text{DIGITAL\_CLOCK} parametrizada a una frecuencia exacta de $10\text{ kHz}$. El rango de entrada se delimitó conectando el terminal \text{Vref+} a la fuente ideal de $5\text{ V}$ y \text{Vref-} a la tierra general del esquema.
 
-La verificación del correcto acoplamiento de toda la cadena de señal (desde la variación física en el puente transductor hasta los indicadores lógicos) se comprobó monitoreando el comportamiento de los \textit{probes} digitales de salida (donde $X1 = D0$ representa el LSB y $X8 = D7$ el MSB) en función del barrido del potenciómetro de entrada:
+Se verificó el acoplamiento de la señal monitoreando el comportamiento de los \textit{probes} digitales de salida (donde $X1 = D0$ representa el LSB y $X8 = D7$ el MSB) en función del barrido del potenciómetro de entrada:
 \begin{itemize}
-    \item \textbf{Potenciómetro en $57.6\%$ ($R_{sensor} \approx 1.15\text{ k}\Omega$):} El puente de Wheatstone genera su mínimo diferencial, provocando que la etapa analógica entregue un voltaje cercano a los $0\text{ V}$ en la entrada del convertidor, lo que resulta en un código de salida \texttt{00000000} (todos los \textit{probes} apagados).
-    \item \textbf{Potenciómetro en $60.0\%$ ($R_{sensor} = 1.20\text{ k}\Omega$):} El puente se balancea perfectamente ($V_{diff} = 0\text{ V}$). El amplificador de instrumentación echa mano de su voltaje de referencia y entrega exactamente $2.5\text{ V}$, forzando al ADC a generar el código de media escala \texttt{10000000} (encendiendo únicamente el indicador $X8$).
-    \item \textbf{Potenciómetro en $62.8\%$ ($R_{sensor} \approx 1.25\text{ k}\Omega$):} El puente alcanza su desbalance máximo positivo. La salida del buffer entrega un nivel de tensión estabilizado en $4.95\text{ V}$ directos al pin de entrada, conmutando el sistema digital al código de fondo de escala completa \texttt{11111111} (activando la totalidad de los indicadores con niveles lógicos de $5\text{ V}$).
+    \item \textbf{Potenciómetro en $57.5\%$ ($R_{sensor} \approx 1.15\text{ k}\Omega$):} El puente de Wheatstone genera su mínimo diferencial, provocando que la etapa analógica entregue un voltaje cercano a los $0\text{ V}$ en la entrada del convertidor, lo que resulta en un código de salida \texttt{00000000} (todos los \textit{probes} apagados).
+    
+    \item \textbf{Potenciómetro en $62.5\%$ ($R_{sensor} \approx 1.25\text{ k}\Omega$):} El puente alcanza su desbalance máximo positivo. La salida del buffer entrega un nivel de tensión estabilizado en $4.95\text{ V}$ directos al pin de entrada, conmutando el sistema digital al código de fondo de escala completa \texttt{11111111} (activando la totalidad de los indicadores con niveles lógicos de $5\text{ V}$).
 \end{itemize}
-Los resultados de la co-simulación confirman la linealidad del acondicionamiento y la precisión del mapeo digital de la variable física analizada.
-
 \section{Resultados Experimentales}
 Se llevó a cabo la implementación física del sistema utilizando los circuitos integrados TL082 como amplificadores operacionales y el ADC08.
 Se midieron las señales de salida de cada etapa.
