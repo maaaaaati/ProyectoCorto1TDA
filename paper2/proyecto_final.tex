@@ -217,7 +217,34 @@ El buffer tiene como función ser un seguidor de voltaje, es decir, ganancia uni
 
 \section{Simulaciones y análisis}
 
-\subsection{Puente Wheatstone}
+\subsection{Puente Wheatstone y Amplificador de Instrumentación}
+
+Para la simulación del puente de Wheatstone y el amplificador de instrumentación se obtienen los siguientes resultados:
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{@{}ccc@{}}
+\toprule
+$R_{sensor}$ & $V_{diferencial}$ & $V_{out}$ \\
+\midrule
+$1.15\,\text{k}\Omega$ & $-25\,\text{mV}$      & $-92\,\text{mV}$  \\
+$1.20\,\text{k}\Omega$ & $-4.89\,\mu\text{V}$  & $2.43\,\text{V}$  \\
+$1.25\,\text{k}\Omega$ & $25.51\,\text{mV}$    & $5.02\,\text{V}$  \\
+\bottomrule
+\end{tabular}
+\caption{Resultados de simulación del puente de Wheatstone y el INA128}
+\end{table}
+
+Cabe destacar que para la simulación del INA128 se optó por implementar el circuito internamente, es decir, modelando su topología de tres amplificadores operacionales; 
+sin embargo, los valores de ganancia y los resultados obtenidos son equivalentes a los del componente integrado.
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.35\linewidth]{puenteinstru.png}
+        \caption{Simulación del puente de Wheatstone y el Amplificador de Instrumentación}
+        \label{fig:simupuente}
+\end{figure}
 
 \subsection{Filtro anti-alising}
 
