@@ -228,27 +228,26 @@ El buffer tiene como función ser un seguidor de voltaje, es decir, ganancia uni
 
 \subsection{ADC}
 
-El bloque final del sistema corresponde a la conversión analógico-digital, encargado de transformar la señal acondicionada proveniente del buffer ($0\text{ V}$ a $5\text{ V}$) en una palabra digital en paralelo de 8 bits. Para ello, se seleccionó el circuito integrado \text{ADC0804}, el cual opera bajo el principio de aproximaciones sucesivas y ofrece una resolución de cuantización definida por:
+El bloque final del sistema corresponde a la conversión analógico-digital, encargado de transformar la señal proveniente del buffer ($0\text{ V}$ a $5\text{ V}$) en una palabra digital en paralelo de 8 bits. Para ello, se seleccionó el circuito integrado \text{ADC0804}, el cual opera bajo el principio de aproximaciones sucesivas y ofrece una resolución de cuantización definida por:
 \begin{equation}
     \text{Resolución} = \frac{V_{FS}}{2^n} = \frac{5\text{ V}}{256} \approx 19.53\text{ mV}
 \end{equation}
 
-Para cumplir con la tasa de muestreo requerida de $f_s = 10\text{ kSps}$, se configuró el oscilador de relajación interno del integrado. La frecuencia de reloj interna ($f_{CLK}$) debe configurarse a un valor aproximado de 64 veces la tasa de muestreo ($f_{CLK} \approx 640\text{ kHz}$). Utilizando la relación característica provista por el fabricante:
+Para cumplir con la tasa de muestreo requerida de $f_s = 10\text{ kSps}$, se configuró el oscilador de relajación interno del integrado. La frecuencia de reloj interna ($f_{CLK}$) debe configurarse a un valor aproximado de 64 veces la tasa de muestreo ($f_{CLK} \approx 640\text{ kHz}$). Utilizando la ecuación dada por el fabricante:
 \begin{equation}
-    f_{CLK} = \frac{1.1}{R \cdot C}
+    f_{CLK} = \frac{1}{1.1 \cdot R \cdot C}
 \end{equation}
-Se seleccionó un capacitor cerámico comercial de $C = 150\text{ pF}$ conectado desde el pin 4 (\text{CLK IN}) hacia tierra, lo que determina una resistencia teórica de diseño de:
+Se seleccionó un capacitor comercial de $C = 150\text{ pF}$ conectado desde el pin 4 (\text{CLK IN}) hacia tierra, lo que determina una resistencia teórica de diseño de:
 \begin{equation}
-    R = \frac{1.1}{640\text{ kHz} \cdot 150\text{ pF}} \approx 11.45\text{ k}\Omega
+    R = \frac{1}{1.1 \cdot 640\text{ kHz} \cdot 150\text{ pF}} \approx 9.5\text{ k}\Omega
 \end{equation}
-Este valor se ajusta físicamente mediante un potenciómetro de precisión (trímer) calibrado a $\approx 9.5\text{ k}\Omega$ para absorber las tolerancias de los componentes reales y clavar la frecuencia objetivo.
 
-El dispositivo se configuró en modo de auto-disparo (\textit{free-running}) mediante la interconexión directa entre el pin 5 ($\overline{\text{INTR}}$, fin de conversión) y el pin 3 ($\overline{\text{WR}}$, inicio de conversión), requiriendo un pulso inicial a tierra para romper el estado de inactividad al encender la fuente. El pin 6 ($V_{IN}(+)$) recibe la señal del buffer, mientras que los pines 7 ($V_{IN}(-)$), 8 (\text{A GND}) y 10 (\text{D GND}) se unificaron a la tierra común del sistema para establecer el límite inferior de escala en $0\text{ V}$. Las salidas paralelas (pines 11 al 18) manejan lógica invertida hacia un arreglo de 8 diodos LED protegidos con resistencias de acoplamiento de $470\ \Omega$ conectados a la línea de $+5\text{ V}$.
+El dispositivo se configuró en modo de auto-disparo (\textit{free-running}) mediante la interconexión directa entre el pin 5 ($\overline{\text{INTR}}$, fin de conversión) y el pin 3 ($\overline{\text{WR}}$, inicio de conversión), requiriendo un pulso inicial a tierra para romper el estado de inactividad al encender la fuente. El pin 6 ($V_{IN}(+)$) recibe la señal del buffer, mientras que los pines 7 ($V_{IN}(-)$), 8 (\text{A GND}) y 10 (\text{D GND}) se conectaron a tierra. Las salidas paralelas (pines 11 al 18) manejan lógica invertida hacia un arreglo de 8 diodos LED protegidos con resistencias de acoplamiento de $470\ \Omega$ conectados a la línea de $+5\text{ V}$.
 
 \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\linewidth]{adc0804.png}
-        \caption{Configuración de conexiones de hardware y periféricos para el circuito integrado ADC0804 en modo auto-disparo.}
+        \caption{Configuración de conexiones para el circuito integrado ADC0804.}
         \label{fig:diseno_adc}
 \end{figure}
 
