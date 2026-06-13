@@ -159,7 +159,7 @@ Para la alimentación del puente se seleccionaron $2.35\,\text{V}$, de forma que
 
 \begin{figure}[H]
         \centering
-        \includegraphics[width=0.6\linewidth]{puentediseno.png}
+        \includegraphics[width=0.4\linewidth]{puentediseno.png}
         \caption{Puente de Wheatstone}
         \label{fig:puentewheat}
 \end{figure}
@@ -188,10 +188,6 @@ despejando $R_G$:
     R_G = \frac{50\,\text{k}\Omega}{G - 1} = \frac{50\,\text{k}\Omega}{99} \approx 505\,\Omega
 \end{equation}
 
-\subsection{Filtro anti-aliasing}
-El filtro anti-aliasing es la última etapa de acondicionamiento de la señal junto al buffer. Se diseñó el filtro asumiendo alimentación de ±~12~V con un amplificador operacional TL082.
-El filtro escogido fue un filtro tipo Butterworth de segundo orden pasabajas con ganancia unitaria, cuya frecuencia de corte se definió en 1~kHz. También se diseñó con una atenuación mínima de 20~dB como objetivo a 5~kHz.
-
 \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\linewidth]{ina128.png}
@@ -199,6 +195,17 @@ El filtro escogido fue un filtro tipo Butterworth de segundo orden pasabajas con
         \label{fig:ina128}
 \end{figure}
 
+
+\subsection{Filtro anti-aliasing}
+El filtro anti-aliasing es la última etapa de acondicionamiento de la señal junto al buffer. Se diseñó el filtro asumiendo alimentación de ±~12~V con un amplificador operacional TL082.
+El filtro escogido fue un filtro tipo Butterworth de segundo orden pasabajas con ganancia unitaria, cuya frecuencia de corte se definió en 1~kHz. También se diseñó con una atenuación mínima de 20~dB como objetivo a 5~kHz.
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{FiltroEsquematico.pdf}
+        \caption{Circuito del filtro anti-aliasing}
+        \label{fig:filtroEsquematico}
+\end{figure}
 
 \subsection{Buffer}
 
