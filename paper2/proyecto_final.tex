@@ -338,6 +338,15 @@ $1.25\,\text{k}\Omega$ & $+25.59\,\text{mV}$ & $4.96\,\text{V}$   \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusiones}
 
+Se diseñó, simuló e implementó de forma satisfactoria una cadena completa de acondicionamiento de señal y conversión analógico-digital, partiendo de la variación de un sensor resistivo y llegando hasta una palabra digital de 8 bits. Cada etapa cumplió con los requisitos planteados, validando la metodología de diseño empleada.
+
+El puente de Wheatstone, alimentado a $2.35\,\text{V}$, generó correctamente el voltaje diferencial de $\pm 25\,\text{mV}$ para el rango de variación de $R_{sensor}$ entre $1.15\,\text{k}\Omega$ y $1.25\,\text{k}\Omega$. En conjunto con el amplificador de instrumentación INA128, configurado con una ganancia de $G = 100$ y un voltaje de referencia de $2.5\,\text{V}$, se logró mapear el rango diferencial de entrada al rango de salida deseado de $0\,\text{V}$ a $5\,\text{V}$. Los resultados experimentales ($13.71\,\text{mV}$, $2.47\,\text{V}$ y $4.96\,\text{V}$) presentaron una concordancia muy cercana con los valores teóricos y de simulación, confirmando la linealidad y precisión del acondicionamiento analógico.
+
+El filtro anti-aliasing tipo Butterworth de segundo orden, con frecuencia de corte de $1\,\text{kHz}$, exhibió la respuesta pasabajas esperada, garantizando la atenuación mínima de $20\,\text{dB}$ en la frecuencia de Nyquist de $5\,\text{kHz}$ y cumpliendo así con las condiciones impuestas por el teorema de muestreo de Nyquist-Shannon. La etapa de buffer, por su parte, proporcionó la ganancia unitaria y el aislamiento de impedancia requeridos para acoplar la señal acondicionada al convertidor sin degradación.
+
+Finalmente, el convertidor analógico-digital validó correctamente el mapeo de la variable física al dominio digital.
+En síntesis, la correlación observada entre los resultados teóricos, de simulación y experimentales demuestra la validez del sistema diseñado y consolida la comprensión de las distintas etapas que conforman un sistema de instrumentación y adquisición de datos, desde la captación de la señal física hasta su representación digital.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
